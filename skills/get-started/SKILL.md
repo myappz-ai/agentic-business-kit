@@ -63,10 +63,26 @@ Also complete the **whole Business Profile**, not just the name. Call `get_busin
 - business email, phone
 - address (and the registered address, if the screen has a separate one), city, state, pincode, country
 - timezone, base currency, allowed currencies
-- tax id (GSTIN / PAN, or "business not registered")
+- tax and registration details for the business's country (see below), or "business not registered"
 - representative: name, role, email, phone
 
 Fill what the user tells you with `update_business_profile`. Preview the brief and the profile together as one review table, and save both on one "yes". Don't trust the completeness score alone: re-read `get_business_profile` and list any field that is still empty. If a field can't be set through a tool, say so plainly and give the screen to finish it (Settings → Business Profile). Never leave the user thinking the profile is complete when it isn't.
+
+**Tax details: ask, in the right words for the country.** This kit is used worldwide. Never assume India. Take the country from the profile or the website, then ask once for that country's IDs, for example:
+
+| Country | Ask for |
+|---|---|
+| India | GSTIN and PAN (and CIN for a company) |
+| United States | EIN (and state sales-tax ID if they collect sales tax) |
+| United Kingdom | VAT number and Companies House number |
+| EU countries | VAT ID (with country prefix) and company registration number |
+| UAE | TRN (VAT) and trade licence number |
+| Australia | ABN (and GST registration) |
+| Canada | Business Number (BN) and GST/HST number |
+| Singapore | UEN and GST registration number |
+| Anywhere else | "Your business tax ID and company registration number, as on your invoices" |
+
+If the website or a public registry already shows them, fill them and don't ask. Also set the base currency and timezone that match the country. If the account has no field for that country's ID, say so plainly and give the screen to finish it (Settings → Business Profile).
 
 Logo: offer it, but it's optional.
 - If they have one, upload it: `get_logo_upload_url`, then PUT the file. If the upload link fails or expires, send it as `image_base64` (about 256×256 PNG) to `set_business_logo`.

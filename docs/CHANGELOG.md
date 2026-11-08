@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.3.6 – 8 Nov 2026
+- get-started asks for tax and registration IDs by country (GSTIN/PAN, EIN, VAT, TRN, ABN, BN, UEN and others), never assumes India, and sets currency and timezone to match.
+
 ## 0.3.5 – 8 Nov 2026
 - get-started harvests everything a website already shows (social links, logo, booking link, hours, contact, legal name) and never asks for it again. Saves social links as account custom values until the profile has fields for them.
 - A company name alone is enough: the agent searches for the website, registry record and social pages, and asks "Is this you?" only when names clash.
