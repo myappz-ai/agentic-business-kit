@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.10 – 8 Nov 2026
+- README redesigned: what you get, how the marketing engine works, industries, control and updates.
+- marketplace.json version brought in line with plugin.json (it was stuck at 0.3.2, so installed copies might not have seen updates).
+- Release rule: every release updates the README.
+
 ## 0.3.9 – 8 Nov 2026
 - New `references/industry-packs.md`: starter pillars, topics, free resources, keywords, next step and "never" rules for 19 industries. All marked Starter until proven.
 - organic-marketing-engine: three layers (method → industry pack → brand style). The brand's style is saved in the account (`organic_style`) so it survives agent changes and kit updates.

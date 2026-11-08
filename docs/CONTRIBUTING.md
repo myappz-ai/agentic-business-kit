@@ -16,7 +16,8 @@ The kit grows only with flows that are **proven**. Ask your agent to "add this t
 
 ## Versioning
 - New playbook: minor bump (0.1.0 → 0.2.0). Fix or improvement: patch bump.
-- Update `.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json`, `docs/CHANGELOG.md` and the README together. Keep the README non-technical: no file names or tool names.
+- Update `.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json` (both version fields), `docs/CHANGELOG.md` and the README together, in the same commit. All three version numbers must match.
+- **The README is the shop window.** On every release, update it so a new visitor sees exactly what they get: the "What you get" table, the engine diagram, the industries, the version badge and "Coming next". Keep it visual (tables, icons, one diagram) and non-technical: no file or tool names.
 - Never put a platform, agency or client brand name inside a playbook. The kit is white-label.
 
 ## Playbooks in the pipeline (not yet proven)

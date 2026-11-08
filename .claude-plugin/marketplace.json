@@ -5,14 +5,14 @@
   },
   "metadata": {
     "description": "Agentic Business Kit: proven marketing and sales playbooks your agent runs for your business.",
-    "version": "0.3.2"
+    "version": "0.3.10"
   },
   "plugins": [
     {
       "name": "agentic-business-kit",
       "source": "./",
-      "description": "Instagram organic marketing engine (3 posts a day, comment-to-DM guides) and Meta lead-form ads with a full CRM setup. New playbooks are added once proven.",
-      "version": "0.3.2"
+      "description": "Instagram organic marketing engine (3 posts a day, comment-to-DM guides, LinkedIn PDF copies, 19 industry plans) and Meta lead-form ads with a full CRM setup. New playbooks are added once proven.",
+      "version": "0.3.10"
     }
   ]
 }
