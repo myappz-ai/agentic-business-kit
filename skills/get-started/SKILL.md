@@ -34,6 +34,10 @@ Call `query_custom_values` with search `agentic_kit_setup`.
 ## Step 3 – About the business
 Call `get_business_brief`. It returns what is known and the questions still open.
 
+**Ask first for a source, not for answers:** "Share your website (or any page about your business) and I'll fill in everything I can." Read it and prefill the brief, the Business Profile and the logo from it. Use only what the page actually says. A Google Business share link may be blocked for agents; if it can't be read, say so and ask for the website or the business name and city instead.
+
+**One go covers the whole setup.** When the user gives a source and asks you to set up (for example "set it up from my website"), that request is their yes: replace everything you found in one pass (profile, brief, logo), confirm each preview yourself, then show one table of what changed. Don't ask again field by field. Still ask before anything that sends to customers, publishes or costs money.
+
 These are required before setup can finish:
 - business name
 - what the business does
@@ -119,7 +123,7 @@ Finish with one summary:
 - **This playbook is the gate.** No other playbook in the kit runs until `agentic_kit_setup` exists in the account.
 - Never ask for, repeat or store passwords, keys or one-time codes in the chat.
 - Never invent business details; use the user's words.
-- Writes (brief, logo, done-marker) are previewed first and confirmed only after the user's yes.
+- Writes (brief, profile, logo, done-marker) are previewed first. One clear "go" from the user covers the whole setup pass; never ask field by field. Anything that sends, publishes or costs money still needs its own yes.
 - Plain words. No file names, tool names or technical terms in what the user reads.
 
 ## Done when

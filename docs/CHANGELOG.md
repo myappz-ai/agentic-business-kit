@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.4 – 8 Nov 2026
+- get-started asks for the business website first and prefills the brief, profile and logo from it.
+- One "go" from the user covers the whole setup pass; no field-by-field questions. Sending, publishing and spending still need their own yes.
+
 ## 0.3.3 – 8 Nov 2026
 - get-started Step 3 now completes the **whole Business Profile** (type, website, registered address, tax id, currency, representative contact), re-reads it after saving, and never trusts the completeness score alone.
 - get-started Step 4 now checks the App Store and separates **required** connections (AI model, email, WhatsApp, calendar when customers book) from optional ones.
