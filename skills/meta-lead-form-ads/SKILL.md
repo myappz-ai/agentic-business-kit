@@ -1,6 +1,6 @@
 ---
 name: meta-lead-form-ads
-description: Sets up and launches Meta (Facebook/Instagram) lead-form ad campaigns for a brand, end to end, on Meta and in the brand's SaaS Universe sub-account. It covers the funnel choice, the CRM pipeline, form sync, the speed-to-lead workflow, WhatsApp/email templates, draft campaigns, the instant form, a test lead, the launch on go-ahead, and daily reporting. Use when someone says "launch lead form ads", "setup Meta lead ads", "run instant form campaign", or "get leads from Facebook ads into my CRM".
+description: Sets up and launches Meta (Facebook/Instagram) lead-form ad campaigns for a brand, end to end, on Meta and in the brand's platform account. It covers the funnel choice, the CRM pipeline, form sync, the speed-to-lead workflow, WhatsApp/email templates, draft campaigns, the instant form, a test lead, the launch on go-ahead, and daily reporting. Use when someone says "launch lead form ads", "setup Meta lead ads", "run instant form campaign", or "get leads from Facebook ads into my CRM".
 ---
 
 # Meta Lead-Form Ads

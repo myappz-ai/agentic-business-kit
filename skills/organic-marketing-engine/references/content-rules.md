@@ -42,7 +42,7 @@ These rules are proven on the reference account (Nov 2026). The content changes 
 ## Facts (LOCKED)
 - Facts come only from pages actually opened during research (search, then open). Add a Source line.
 - No invented numbers. No income or result promises. No "first-ever". No fake discounts.
-- Never feature the brand's competitors. For SaaS Universe brands, that means no CRM, booking, inbox, email-marketing or WhatsApp tools.
+- Never feature the brand's competitors. For a software or agency brand, that means no rival CRM, booking, inbox, email-marketing or WhatsApp tools.
 
 ## Rejected styles (do not use)
 - Illustrated or drawn carousels.

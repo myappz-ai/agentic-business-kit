@@ -7,7 +7,7 @@
 - Hub page: `index`, a list of guide cards, newest first.
 - Template: `guide-template.html` in this folder. Fill every `{{…}}` and delete any unused optional blocks.
 - Skins: `post` (white), `editorial` (cream, serif headings) or `night` (dark with a yellow bonus). Use one skin per brand, chosen once.
-- Guide URL pattern: `https://admin.myappzbackend.com/site/<funnel-slug>/<keyword-lowercase>`.
+- Guide URL pattern: `https://<SITE_DOMAIN>/site/<funnel-slug>/<keyword-lowercase>` (use the exact URL the publish tool returns; white-label accounts have their own domain).
   - The live URL renders client-side, so a plain fetch returns an empty shell.
   - To verify the content, use `get_page_html`.
 

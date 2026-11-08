@@ -1,6 +1,6 @@
 # Agent rules (all playbooks, every agent)
 
-These rules apply whenever Claude, ChatGPT, Grok or any other agent works on a MyAppz / SaaS Universe account through this kit. Every skill in the kit follows them.
+These rules apply whenever Claude, ChatGPT, Grok or any other agent works on a platform account through this kit. Every skill in the kit follows them.
 
 ## 1. Always give exact, clickable links
 
@@ -22,9 +22,9 @@ Whenever the agent tells the user about something they can open, check or act on
 | Meta Business Suite (inbox, posts, forms) | https://business.facebook.com/ |
 | Claude connectors | https://claude.ai/settings/connectors |
 | Composio (Instagram publishing connection) | https://app.composio.dev/ |
-| This kit on GitHub | https://github.com/myappz-ai/agentic-saas-kit |
+| This kit on GitHub | https://github.com/myappz-ai/agentic-business-kit |
 
-For anything inside the user's MyAppz / SaaS Universe account, use the link the tool returns for that item.
+For anything inside the user's platform account, use the link the tool returns for that item.
 
 ## 2. Approval before anything goes out
 Paid ads, bulk messages and anything a customer sees go live only after the user's explicit "go ahead". The only exception is something the user has pre-authorized in writing, such as per-post Social Flows in the organic engine.

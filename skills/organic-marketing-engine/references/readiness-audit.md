@@ -24,7 +24,7 @@ Run every check, in parallel where possible, and report one table: **Piece | Sta
 ## Verdict
 
 - **NOT READY** if 2, 3 or 12 fails. Tell the owner exactly what to do, in plain words:
-  - Instagram: "In your SaaS Universe sub-account go to Settings → App Store → Instagram. Connect with **Instagram Login** and allow every permission. It must be a Business or Creator account."
+  - Instagram: "In your platform account go to Settings → App Store → Instagram. Connect with **Instagram Login** and allow every permission. It must be a Business or Creator account."
   - Composio: "Add your brand's Instagram as a connection in Composio, so I can publish and read insights."
   - Stop here. Re-run the audit when they say it's done.
 - **READY WITH WARNINGS** if only items 6, 8, 10, 11 or 13 are flagged. Continue and fix them in Phase 2.

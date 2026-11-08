@@ -10,4 +10,4 @@
 | Comments from the brand's own account never trigger flows. | Owner tests look broken. | Test from a second account, or DM the keyword. | — |
 | Flows don't replay comments made before the flow existed. | Early commenters are missed. | Create the flow immediately after publishing. Ask early commenters to DM the keyword. | Backfill option. |
 | Composio's sandbox can reset. | Renderer and font go missing. | The run recreates them from `references/`. | — |
-| Nova `create_form` adds no submit button (affects landing-page forms, not flows). | The hosted form has no Submit button. | Add it by hand in the Form builder, or use a native embed. | Always append a submit element. |
+| The platform's `create_form` adds no submit button (affects landing-page forms, not flows). | The hosted form has no Submit button. | Add it by hand in the Form builder, or use a native embed. | Always append a submit element. |

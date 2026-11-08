@@ -1,6 +1,6 @@
 # Adding a playbook
 
-The kit grows only with flows that are **proven**. Ask Claude to "add this to the Agentic SaaS Kit" (or "add this to the Agentic SaaS Kit"); the `add-proven-playbook` skill walks through it.
+The kit grows only with flows that are **proven**. Ask Claude to "add this to the Agentic Business Kit"; the `add-proven-playbook` skill walks through it.
 
 ## Proven means
 - It ran for a real brand for 2+ weeks, or one full campaign cycle.
@@ -15,11 +15,12 @@ The kit grows only with flows that are **proven**. Ask Claude to "add this to th
 
 ## Versioning
 - New playbook: minor bump (0.1.0 → 0.2.0). Fix or improvement: patch bump.
-- Update `plugin.json`, `CHANGELOG.md` and the README table together.
+- Update `.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json`, `CHANGELOG.md` and the README table together.
+- Never put a platform, agency or client brand name inside a playbook. The kit is white-label.
 
 ## Playbooks in the pipeline (not yet proven)
 - VSL funnel
 - Live webinar / workshop funnel (registration → reminders → show-up → offer)
 - WhatsApp broadcast re-engagement
-- Searchy shop launch for sellers
+- Online shop / catalogue launch for sellers
 - Review / reputation campaign

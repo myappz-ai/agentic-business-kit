@@ -1,6 +1,6 @@
 ---
 name: organic-marketing-engine
-description: Sets up a brand's hands-free Instagram organic marketing engine on SaaS Universe. It posts 3 carousels a day, and each post gets a comment keyword, its own free guide page, and its own Social Flow that DMs the guide and saves the commenter as a tagged CRM contact. A nightly review rewrites the strategy from real numbers. Use when someone says "setup my organic marketing engine", "set up Instagram autopilot", "comment-to-DM guides", or "copy the 3-posts-a-day flow for my brand".
+description: Sets up a brand's hands-free Instagram organic marketing engine on its own platform account. It posts 3 carousels a day, and each post gets a comment keyword, its own free guide page, and its own Social Flow that DMs the guide and saves the commenter as a tagged CRM contact. A nightly review rewrites the strategy from real numbers. Use when someone says "setup my organic marketing engine", "set up Instagram autopilot", "comment-to-DM guides", or "copy the 3-posts-a-day flow for my brand".
 ---
 
 # Organic Marketing Engine
@@ -11,7 +11,7 @@ The content changes per brand. The flow never changes: **post → keyword → un
 
 ## Phase 0 – Brand intake
 
-1. Identify the brand's SaaS Universe sub-account connector: the MCP whose `get_business_profile` returns this brand. Every guide, flow and CRM write goes there. Never use another brand's connector.
+1. Identify the brand's platform account connector: the MCP whose `get_business_profile` returns this brand. Every guide, flow and CRM write goes there. Never use another brand's connector.
 2. Collect the answers with AskUserQuestion. Only ask for what the profile or Instagram can't tell you:
    - the Instagram handle
    - the audience

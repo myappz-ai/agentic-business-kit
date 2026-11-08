@@ -1,6 +1,6 @@
 # Sub-account setup (CRM side) – do this BEFORE the ad goes live
 
-All of this happens in the **client's** SaaS Universe sub-account connector. Every write is a preview first, then a confirm with `preview_token` after the owner's yes. Sends (email / WhatsApp) go through AI Suite → Approvals.
+All of this happens in the **client's** platform account connector. Every write is a preview first, then a confirm with `preview_token` after the owner's yes. Sends (email / WhatsApp) go through AI Suite → Approvals.
 
 ## 1. Connections
 | Check | Tool | Pass |

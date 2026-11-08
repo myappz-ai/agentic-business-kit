@@ -1,9 +1,9 @@
 ---
 name: add-proven-playbook
-description: Packages a new, proven growth workflow into the Agentic SaaS Kit as its own skill, so clients can replicate it. Use when someone says "add this to the Agentic SaaS Kit" (or "add this to the Agentic SaaS Kit"), "turn this flow into a playbook for clients", "package what we did for <brand>", or "update the Agentic SaaS Kit".
+description: Packages a new, proven growth workflow into the Agentic Business Kit as its own skill, so clients can replicate it. Use when someone says "add this to the Agentic Business Kit", "turn this flow into a playbook for clients", "package what we did for <brand>", or "update the Agentic Business Kit".
 ---
 
-# Add a proven playbook to the Agentic SaaS Kit
+# Add a proven playbook to the Agentic Business Kit
 
 The kit only holds flows that have **worked for a real client**. Content can change per brand; the flow must be repeatable.
 
@@ -16,7 +16,8 @@ Ask for or find evidence of all of these, and stop if any is missing:
 
 ## 2. Make it brand-agnostic
 - Replace brand names, ids, handles, URLs and numbers with `<PLACEHOLDERS>`. Keep the real numbers only as an "Evidence" note.
-- Name the tools by connector: "the brand's SaaS Universe sub-account connector", "Meta Ads MCP", "Composio Instagram". Never hard-code a specific client's MCP.
+- Name the tools by connector: "the brand's platform account connector", "Meta Ads MCP", "Composio Instagram". Never hard-code a specific client's MCP.
+- No platform, agency or client brand names anywhere: say "platform account", "the brand", "the client". The kit is white-label.
 - Keep the LOCKED rules (approvals, tone, facts, compliance) exactly as they were proven.
 
 ## 3. Write the skill
@@ -32,9 +33,9 @@ Create `skills/<kebab-name>/`:
 - `README.md`: add the playbook to the table, with the trigger phrase and the connectors it needs.
 - `CONNECTORS.md`: add any new connector.
 - `CHANGELOG.md`: a new version line (minor bump for a new playbook, patch for fixes).
-- `.claude-plugin/plugin.json`: bump `version` to match.
+- `.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json`: bump `version` to match.
 
 ## 5. Validate and ship
 - Check that `plugin.json` is valid JSON with a kebab-case name, that every skill folder has a `SKILL.md` with frontmatter, and that no client ids or secrets remain (search for digits-only ids, `@handles` and emails).
-- Zip the plugin root to `agentic-saas-kit.plugin`, and also as a `.zip` for people who upload skills one by one.
+- Zip the plugin root to `agentic-business-kit.plugin`, and also as a `.zip` for people who upload skills one by one.
 - Deliver the file, and save a copy and the changelog to the project.

@@ -15,7 +15,7 @@ Flow authorization (owner's own words, <date>): "<exact quote>"
 | Sub-account connector | <SUBACCOUNT_MCP> (sub-account <id>) |
 | Composio Instagram connection | <connection id> (username verified: <handle>) |
 | Guides site | funnel <GUIDES_FUNNEL_ID>, slug <FUNNEL_SLUG>, hub page id <id>, skin <post/editorial/night> |
-| Guide URL pattern | https://admin.myappzbackend.com/site/<FUNNEL_SLUG>/<keyword> |
+| Guide URL pattern | https://<SITE_DOMAIN>/site/<FUNNEL_SLUG>/<keyword> (use the URL the publish tool returns) |
 | Bonus block | headline "<…>", body "<…>", button "<…>", URL <…> (+ utm) |
 | Reports | <Slack channel> |
 | Timezone | <TZ> |
