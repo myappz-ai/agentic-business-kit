@@ -7,6 +7,9 @@ description: Sets up and launches Meta (Facebook/Instagram) lead-form ad campaig
 
 Build the CRM side first and the ads second. Nothing goes live until two things are true: a test lead has reached the CRM with its tag, deal, owner and messages, and the owner has said "go ahead" for that specific launch.
 
+## Setup check (always first)
+Call `query_custom_values` with search `agentic_kit_setup`. If it's missing, say "Let's finish your account setup first; it takes about 5 minutes." Then run the **get-started** playbook, and come back here when it's done.
+
 ## Phase 0 – Intake
 Collect what's missing with AskUserQuestion:
 - business type, offer, and service area (cities or radius)
@@ -63,7 +66,7 @@ Fix anything missing. This step is mandatory.
 Schedule the read-only daily report from `references/reporting.md`, using cost per *CRM* lead, GOOD / HOLD / JUNK, a RED list and one main flag. Recommend changes; don't execute them without a yes.
 
 ## Rules that never change
-- **Always give exact, clickable links** (see `AGENT_RULES.md`). After each build step, end with the links to the pipeline, workflow, form and Meta campaign draft. Every click-path step gets its own URL.
+- **Always give exact, clickable links** (see `docs/AGENT_RULES.md`). After each build step, end with the links to the pipeline, workflow, form and Meta campaign draft. Every click-path step gets its own URL.
 - **Nothing goes live without the owner's explicit "go ahead" for that launch.** Pausing and budget changes also need a yes.
 - Ads run as the brand's Page and Instagram, never as a personal profile.
 - No Audience Network. Never pause a video ad without an explicit yes.
@@ -74,6 +77,7 @@ Schedule the read-only daily report from `references/reporting.md`, using cost p
 - Done = a test lead in the CRM with its tag, deal, owner and messages.
 
 ## Done when
+- [ ] Setup check passed (`agentic_kit_setup` exists)
 - [ ] Audit green
 - [ ] Pipeline, templates and workflow live and validated
 - [ ] Campaign, ad sets, ads and instant form built as drafts, and form sync mapped

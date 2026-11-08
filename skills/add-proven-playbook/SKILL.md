@@ -24,15 +24,15 @@ Ask for or find evidence of all of these, and stop if any is missing:
 Create `skills/<kebab-name>/`:
 - `SKILL.md`:
   - Frontmatter `name`, plus a third-person `description` with trigger phrases.
-  - Body under ~1,500 words: Intake → Readiness audit → Build → Test → Launch → Report.
-  - "Rules that never change" and a "Done when" checklist. The rules must start with "Always give exact, clickable links (see `AGENT_RULES.md`)" and say which links to give after each step.
+  - Body under ~1,500 words: Setup check (run get-started if `agentic_kit_setup` is missing) → Intake → Readiness audit → Build → Test → Launch → Report.
+  - "Rules that never change" and a "Done when" checklist. The rules must start with "Always give exact, clickable links (see `docs/AGENT_RULES.md`)" and say which links to give after each step.
 - `references/`: SOPs, templates, prompts, code, checklists and known issues.
 - Write instructions **for Claude**: imperative, step by step, with the exact tool names.
 
 ## 4. Update the kit
-- `README.md`: add the playbook to the table, with the trigger phrase and the connectors it needs.
-- `CONNECTORS.md`: add any new connector.
-- `CHANGELOG.md`: a new version line (minor bump for a new playbook, patch for fixes).
+- `README.md`: add one plain-words line to "What you can ask for". Keep the README non-technical.
+- `docs/CONNECTORS.md`: add any new connector.
+- `docs/CHANGELOG.md`: a new version line (minor bump for a new playbook, patch for fixes).
 - `.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json`: bump `version` to match.
 
 ## 5. Validate and ship

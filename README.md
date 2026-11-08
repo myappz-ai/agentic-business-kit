@@ -1,48 +1,37 @@
 # Agentic Business Kit
 
-**Proven AI marketing & sales playbooks your agent runs for your business.**
-Connect your AI agent (Claude, ChatGPT, Grok or any agent that supports connectors) to your business account and say one sentence. The agent sets up and runs the whole flow: **generate leads, manage leads, automate follow-up.**
+**Your AI agent runs your marketing and sales: it generates leads, manages them and follows up automatically.**
+Works with Claude, ChatGPT and other AI agents.
 
-| Generate leads | Manage leads | Automate leads |
-|---|---|---|
-| Instagram comment-to-DM guides, Meta lead-form ads, landing pages and forms | One CRM with pipelines, tags, tasks and a full contact history | Instant WhatsApp and email replies, call tasks, nurture sequences and daily reports |
+---
 
-## Playbooks
+## Start here: 3 steps, about 5 minutes
 
-| Say this to your agent | What happens | Status |
-|---|---|---|
-| **"Setup my organic marketing engine"** | 3 Instagram posts a day. Each gets a comment keyword, its own free guide page and its own Social Flow that DMs the guide and saves the commenter as a tagged CRM contact. A nightly review improves the strategy from real numbers. | Proven |
-| **"Launch lead form ads"** | The right funnel for your industry, a CRM pipeline, speed-to-lead automation (instant WhatsApp + email, a call task in 5 minutes, nurture), draft Meta campaigns and an instant form, a test lead end to end, then launch on your go-ahead and a daily report. | Proven |
-| "Add this to the Agentic Business Kit" | For kit maintainers: packages a new proven flow into this kit. | Internal |
+**1. Install** – paste this link into your AI agent:
 
-**Always a clickable link.** Whichever agent you use, it gives you the exact link to everything it builds or asks you to check. See [AGENT_RULES.md](AGENT_RULES.md).
+`https://github.com/myappz-ai/agentic-business-kit`
 
-**Nothing paid goes live without your "go ahead".** Every playbook runs: intake → readiness audit → build → live test → schedule or launch → reports.
+- **Claude:** in [Claude](https://claude.ai), open *Customize → Plugins* → *Add marketplace* → *Add from a repository* → paste the link → turn on **Agentic Business Kit**.
+- **ChatGPT (Business / Enterprise admins):** in [ChatGPT](https://chatgpt.com), open *Admin → Plugins* → *Add* → *Import marketplace* → paste the link.
 
-## Install
+**2. Connect your account** when your agent asks. You sign in on your account's own page. Never paste passwords or keys into the chat.
 
-**Claude (web or desktop):** Customize → Plugins → Add marketplace → Add from a repository → paste `https://github.com/myappz-ai/agentic-business-kit` → turn on **Agentic Business Kit**.
+**3. Say "Get started"** – your agent checks your account, asks a few questions about your business, and gets you ready.
 
-**Claude Code:**
-```
-/plugin marketplace add myappz-ai/agentic-business-kit
-/plugin install agentic-business-kit@agentic-kits
-```
+> You don't need to open or understand the files below. Your agent reads them for you.
 
-## Before you start (one time, about 10 minutes)
+---
 
-1. **Your platform account connector** is connected in your agent. Everything (guides, flows, contacts, pipelines) is created in your account.
-2. **Instagram:** in your account, go to Settings → App Store → Instagram and connect with **Instagram Login**, allowing every permission. It must be a Business or Creator account.
-3. **Composio** (organic engine): connect your brand's Instagram for publishing carousels and reading insights.
-4. **Meta Ads** connector (lead-form ads), plus Ad Launcher → Platforms → Connect with Meta in your account.
-5. Optional: **Slack** for reports, **Claude in Chrome** to build instant forms in Ads Manager.
+## What you can ask for
 
-Full list: [CONNECTORS.md](CONNECTORS.md).
+| Say | What you get |
+|---|---|
+| **"Get started"** | Your account connected and checked, your business details saved, and your best first step. |
+| **"Setup my organic marketing engine"** | 3 Instagram posts a day. Anyone who comments the keyword gets a free guide in their DMs and is saved as a lead. |
+| **"Launch lead form ads"** | Facebook and Instagram lead ads that drop leads straight into your CRM, with instant WhatsApp and email replies. Nothing goes live without your "go ahead". |
 
-## For agencies
+**You stay in control:** nothing is sent to customers and nothing costs money without your approval. Your agent always gives you a link to check what it built.
 
-Running an agency? The **Agentic Agency Kit** includes this kit plus playbooks for onboarding and running clients.
+---
 
-## Updates
-
-New playbooks are added only after they have worked for real businesses. See [CHANGELOG.md](CHANGELOG.md) and [CONTRIBUTING.md](CONTRIBUTING.md).
+<sub>Claude Code: `/plugin install agentic-business-kit --marketplace myappz-ai/agentic-business-kit`. For your agent and your team: rules, connectors and change log are in [`docs/`](docs/). Running an agency? Ask about the **Agentic Agency Kit**.</sub>

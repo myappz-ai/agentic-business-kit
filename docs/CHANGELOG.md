@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.0 – 8 Nov 2026
+- New **get-started** playbook: the mandatory first-run setup. It connects the account, syncs the business brief, checks Instagram, Meta, WhatsApp, email and calendar, applies the house rules, saves `agentic_kit_setup` in the account, and recommends the first playbook.
+- Every playbook now starts with a setup check, and runs get-started first if setup isn't done.
+- Claude: a first-chat nudge (session-start hook) asks new users to say "Get started".
+- Simpler front page: a 3-step "Start here". Technical files moved into `docs/`.
+
 ## 0.2.0 – 8 Nov 2026
 - Renamed to **Agentic Business Kit** (was Agentic SaaS Kit). The install command is now `/plugin install agentic-business-kit@agentic-kits`.
 - White-label ready: no platform or company brand names inside the playbooks. Your agency's or platform's name is never shown to clients.

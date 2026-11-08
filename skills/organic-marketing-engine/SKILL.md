@@ -9,6 +9,9 @@ Run this in four phases, in order. Do not skip the audit. Do not schedule anythi
 
 The content changes per brand. The flow never changes: **post → keyword → unique guide → per-post Social Flow → CRM contact → nightly review**.
 
+## Setup check (always first)
+Call `query_custom_values` with search `agentic_kit_setup`. If it's missing, say "Let's finish your account setup first; it takes about 5 minutes." Then run the **get-started** playbook, and come back here when it's done.
+
 ## Phase 0 – Brand intake
 
 1. Identify the brand's platform account connector: the MCP whose `get_business_profile` returns this brand. Every guide, flow and CRM write goes there. Never use another brand's connector.
@@ -67,7 +70,7 @@ Save everything to the project.
 
 ## Rules that never change
 
-- **Always give exact, clickable links** (see `AGENT_RULES.md`). After every post, end with the links to the live Instagram post, its guide page and its Social Flow.
+- **Always give exact, clickable links** (see `docs/AGENT_RULES.md`). After every post, end with the links to the live Instagram post, its guide page and its Social Flow.
 - **One flow per post, linked to that post's unique guide.** Never use an account-wide default flow.
 - Create the flow immediately after publishing; flows don't replay earlier comments.
 - Kind tone, never put the reader down.
@@ -81,6 +84,7 @@ Save everything to the project.
 
 ## Done when
 
+- [ ] Setup check passed (`agentic_kit_setup` exists)
 - [ ] Audit green and saved
 - [ ] Guides site live, with a hub
 - [ ] LOCKED doc saved
