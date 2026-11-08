@@ -93,7 +93,7 @@ This is the pattern the kit sets up. Follow it exactly; only the topics and the 
 
 **3. Comment-to-DM on every post.**
 - Caption line 2 asks for the comment: "Comment KEYWORD and I'll send you the free <doc>." Always ask for a **comment**, never "DM me".
-- Each post gets its own free resource page and its own Social Flow: a friendly public reply, then a DM with the link, once per person, with a CRM tag `ig-<keyword>`. Test it before calling the post done.
+- Each post gets its own free resource page and its own Social Flow: a friendly public reply, then a DM that asks them to follow and sends the link once the follow is verified (follow gate on by default), once per person, with a CRM tag `ig-<keyword>`. Test it before calling the post done.
 - Vary the word for the resource across posts: gift, doc, cheat sheet, guide, checklist, playbook. Keep one word throughout a single post.
 
 **4. Keywords people can type.**
@@ -110,6 +110,10 @@ This is the pattern the kit sets up. Follow it exactly; only the topics and the 
 - Win on saves and shares: a recap slide, a save line and a "send this to a friend who…" line on every post.
 - Nightly: score = reach + 3×comments + 3×shares + 2×saves + likes, compared with the 30-post median. Double down on winners with a "Part 2", drop what loses, keep at least 5 unused topics per slot.
 - Kind tone always. Facts only from pages actually opened. No income or result promises.
+
+**7. Reels.**
+- A slot can carry a talking-head reel instead of a carousel. Same keyword, guide and per-post flow.
+- Publishing a video needs a public link: see `references/publishing.md` → Reels.
 
 ## The brand's own style (saved in the account)
 
@@ -131,6 +135,7 @@ A new practice goes into the method or a pack only when the numbers prove it:
 
 - **Always give exact, clickable links** (see `docs/AGENT_RULES.md`). After every post, end with the links to the live Instagram post, its guide page and its Social Flow.
 - **One flow per post, linked to that post's unique guide.** Never use an account-wide default flow.
+- **Follow gate on for every flow.** The guide goes out only after the follow is verified.
 - Create the flow immediately after publishing; flows don't replay earlier comments.
 - Kind tone, never put the reader down.
 - Facts only from pages actually opened.

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.11 – 8 Nov 2026
+- **Follow gate on by default.** Every per-post Social Flow asks the commenter to follow first and sends the guide only after the follow is verified. The message says "reply DONE", because that is the word the platform waits for today.
+- **Reels.** New `publishing.md` → Reels: upload the original .mp4 to the Vault, take its public link from the preview, check it, publish, then create the flow straight away. SKILL.md lets a slot carry a reel.
+- Known issues: the follow gate is typed-word only (the button version is requested), the Vault tools can't upload video or return public links, and on some accounts the Social Flow tools are only reachable through `nova_call_tool`.
+- README updated to show the follow step.
+
 ## 0.3.10 – 8 Nov 2026
 - README redesigned: what you get, how the marketing engine works, industries, control and updates.
 - marketplace.json version brought in line with plugin.json (it was stuck at 0.3.2, so installed copies might not have seen updates).

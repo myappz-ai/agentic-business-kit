@@ -28,3 +28,14 @@ Save the spec JSON and the caption text next to the slides.
 ## Video cover (optional, v5)
 - Carousels accept video children.
 - To use one, create each child with `INSTAGRAM_POST_IG_USER_MEDIA` (`is_carousel_item`) in order, then create the carousel with the `children` ids.
+
+## Reels (talking-head video)
+1. Use the final 9:16 .mp4 with the original colours. Don't brighten or re-grade it.
+2. **Upload.** The Vault upload tool doesn't take video yet (see `known-issues.md`). Ask the owner to upload the file in the account's **Settings → Vault** and choose **Keep original file**. The other option re-encodes the video.
+3. **Public link.** Open the file's preview in the Vault. The `<video>` source is the file's public link (strip any `#t=` suffix). Check it before using it: HTTP 200, `content-type: video/mp4`, and the same size as the local file.
+4. `get_instagram_connection_health`, then check today's media so the slot is never posted twice.
+5. Publish with `publish_instagram_post`: `video.url` = the public link, plus the caption (preview, then confirm). If it returns `container_id`, wait about 30 s and call again with only `container_id`.
+   - Or use Composio: `INSTAGRAM_POST_IG_USER_MEDIA` (`video_url`, media_type REELS), then `INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH` with `max_wait_seconds` 180.
+6. **Immediately** create the Social Flow with the follow gate on (`guide-and-flow-spec.md` §4).
+
+**Timing note (one account, not yet a rule):** on the account this was built on, reels posted 15:00–17:00 local time had the highest median reach (3,783 against 2,422 for late morning), and reels reached about 3× more people than carousels.
