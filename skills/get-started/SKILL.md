@@ -47,7 +47,15 @@ Everything else is optional.
 
 Ask only the missing questions, 2–3 at a time, in the user's words. Never invent answers. Save with `save_business_brief`: show the preview, then confirm only after the user's yes.
 
-Also save the core profile with `update_business_profile` (brand name, industry, email, phone, address, owner). Preview both the brief and the profile together as one review table, and save both on one "yes".
+Also complete the **whole Business Profile**, not just the name. Call `get_business_profile` and walk every field the account's Business Profile screen shows:
+- brand name, legal name, industry, business type, website
+- business email, phone
+- address (and the registered address, if the screen has a separate one), city, state, pincode, country
+- timezone, base currency, allowed currencies
+- tax id (GSTIN / PAN, or "business not registered")
+- representative: name, role, email, phone
+
+Fill what the user tells you with `update_business_profile`. Preview the brief and the profile together as one review table, and save both on one "yes". Don't trust the completeness score alone: re-read `get_business_profile` and list any field that is still empty. If a field can't be set through a tool, say so plainly and give the screen to finish it (Settings → Business Profile). Never leave the user thinking the profile is complete when it isn't.
 
 Logo: offer it, but it's optional.
 - If they have one, upload it: `get_logo_upload_url`, then PUT the file. If the upload link fails or expires, send it as `image_base64` (about 256×256 PNG) to `set_business_logo`.
@@ -63,6 +71,19 @@ Run these read-only checks and show **one** table: Channel | Status ✅ / ⚠️
 | Meta ads | `get_ad_connection_health` | Lead-form ads |
 | WhatsApp + email | `get_channel_readiness` | Instant replies and follow-ups |
 | Calendar | `list_event_types` | Booking appointments |
+
+Also call `query_integrations` (the account's App Store) and tell the user which connections are **required** and which are **optional**:
+
+| Connection | Required? | Why |
+|---|---|---|
+| AI model | Required | Powers the assistant inside the account |
+| Email sending (SMTP) | Required | Welcome emails, reminders, invoices |
+| WhatsApp Business | Required in India | Instant replies and follow-ups to leads |
+| Calendar / booking page | Required if customers book appointments | Bookings and reminders |
+| Instagram / Meta | Required only for the marketing and ads playbooks | Comment-to-DM, lead-form ads |
+| Zoom, Slack, Google, Canva and others | Optional | Add when a playbook needs them |
+
+Connect required ones first. Use a tool that returns a connect link when the platform provides one; otherwise give the exact screen (Settings → App Store, or the channel's own screen) and re-check with the health tool after the user says it's done.
 
 - Check in this order: the platform account first, then the agent's official connectors, then Composio or anything else the user already uses (`docs/AGENT_RULES.md` rule 4). If the user already has a working Composio connection for something, count it as ✅.
 - For each ⚠️ / ❌, add one plain line on what that connection is for, so the user learns their setup.
