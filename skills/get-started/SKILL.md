@@ -34,7 +34,14 @@ Call `query_custom_values` with search `agentic_kit_setup`.
 ## Step 3 – About the business
 Call `get_business_brief`. It returns what is known and the questions still open.
 
-**Ask first for a source, not for answers:** "Share your website (or any page about your business) and I'll fill in everything I can." Read it and prefill the brief, the Business Profile and the logo from it. Use only what the page actually says. A Google Business share link may be blocked for agents; if it can't be read, say so and ask for the website or the business name and city instead.
+**Ask first for a source, not for answers:** "Share your website (or any page about your business) and I'll fill in everything I can." Read it and prefill the brief, the Business Profile and the logo from it. Use only what the page actually says.
+
+**Harvest everything the source already gives, then don't ask for it.** From the website (home, About, Contact, footer) pull and keep ready:
+- social profile links (Instagram, Facebook, LinkedIn, YouTube, X, WhatsApp wa.me link)
+- logo image, brand colours, booking or "book now" link, opening hours
+- phone, email, address, legal name, GSTIN if printed
+
+Read the page's links, not just its text: if your reader returns text without link targets, use the platform's website import tool when it has one, or fetch the raw HTML when your tools allow it. Save social links where the account can reuse them (the profile when it has a field for them, otherwise account custom values named `social_instagram`, `social_linkedin` and so on). If the user only gives a company name, search for it: the official website, the company registry (legal name, CIN, registered office) and the social pages. When a search finds more than one business with that name, ask "Is this you?" once before using it. Only ask the user for what you truly could not find, and say where you looked. A Google Business share link may be blocked for agents; if it can't be read, say so and ask for the website or the business name and city instead.
 
 **One go covers the whole setup.** When the user gives a source and asks you to set up (for example "set it up from my website"), that request is their yes: replace everything you found in one pass (profile, brief, logo), confirm each preview yourself, then show one table of what changed. Don't ask again field by field. Still ask before anything that sends to customers, publishes or costs money.
 

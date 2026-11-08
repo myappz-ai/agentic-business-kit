@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.5 – 8 Nov 2026
+- get-started harvests everything a website already shows (social links, logo, booking link, hours, contact, legal name) and never asks for it again. Saves social links as account custom values until the profile has fields for them.
+- A company name alone is enough: the agent searches for the website, registry record and social pages, and asks "Is this you?" only when names clash.
+
 ## 0.3.4 – 8 Nov 2026
 - get-started asks for the business website first and prefills the brief, profile and logo from it.
 - One "go" from the user covers the whole setup pass; no field-by-field questions. Sending, publishing and spending still need their own yes.
