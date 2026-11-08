@@ -23,6 +23,8 @@ Proven, plug-and-play playbooks your agent runs end to end. Install once, then j
 | **"Setup my organic marketing engine"** | 3 Instagram posts a day, each with a comment keyword, its own free guide and a Social Flow that DMs it and saves the lead to your CRM. A nightly review improves the strategy from real numbers. |
 | **"Launch lead form ads"** | Meta lead-form campaigns built on a CRM pipeline and a speed-to-lead workflow (instant WhatsApp + email, call task in 5 minutes). A test lead runs end to end before anything goes live, and nothing launches without your go-ahead. |
 
+**Always a clickable link.** Whichever agent you use, it gives you the exact link to everything it builds or asks you to check: the guide, form, flow, pipeline, campaign or setting. One click and you're on the right screen.
+
 New playbooks are added only after they have produced results for real businesses.
 
 ## Install (clients with access)

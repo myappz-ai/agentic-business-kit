@@ -5,14 +5,14 @@
   },
   "metadata": {
     "description": "Proven growth playbooks for SaaS Universe brands.",
-    "version": "0.1.0"
+    "version": "0.1.1"
   },
   "plugins": [
     {
       "name": "agentic-saas-kit",
       "source": "./plugins/agentic-saas-kit",
       "description": "Instagram organic marketing engine (3 posts a day, comment-to-DM guides) and Meta lead-form ads with full CRM setup. New playbooks are added once proven with real clients.",
-      "version": "0.1.0"
+      "version": "0.1.1"
     }
   ]
 }

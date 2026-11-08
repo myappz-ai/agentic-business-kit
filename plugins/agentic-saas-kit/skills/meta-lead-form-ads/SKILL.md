@@ -63,6 +63,7 @@ Fix anything missing. This step is mandatory.
 Schedule the read-only daily report from `references/reporting.md`, using cost per *CRM* lead, GOOD / HOLD / JUNK, a RED list and one main flag. Recommend changes; don't execute them without a yes.
 
 ## Rules that never change
+- **Always give exact, clickable links** (see `AGENT_RULES.md`). After each build step, end with the links to the pipeline, workflow, form and Meta campaign draft. Every click-path step gets its own URL.
 - **Nothing goes live without the owner's explicit "go ahead" for that launch.** Pausing and budget changes also need a yes.
 - Ads run as the brand's Page and Instagram, never as a personal profile.
 - No Audience Network. Never pause a video ad without an explicit yes.

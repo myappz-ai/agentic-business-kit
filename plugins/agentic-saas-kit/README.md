@@ -21,6 +21,10 @@ Proven growth playbooks that any SaaS Universe brand can run with Claude. **The 
 
 See `CONNECTORS.md` for the full list.
 
+## How your agent answers
+
+Whatever agent you use, it gives you **exact, clickable links** for everything it builds or asks you to do: the page, form, flow, pipeline, campaign or setting. One click takes you to the right screen. The full rules are in `AGENT_RULES.md`.
+
 ## How it works
 
 Each playbook runs in the same order: **intake → readiness audit → build → live test → schedule or launch → reports**. Claude stops and tells you what to fix if anything isn't ready. Nothing paid goes live without your explicit "go ahead".

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1 – 8 Nov 2026
+- New `AGENT_RULES.md`, which every agent (Claude, ChatGPT, Grok and others) follows. The first rule: always give exact, clickable links, take them from tool results or opened pages, and never invent them.
+- All three skills now say which links to give after each step.
+
 ## 0.1.0 – 8 Nov 2026
 - **organic-marketing-engine:**
   - 3 posts a day, with a keyword, a unique guide and a per-post Social Flow on every post.

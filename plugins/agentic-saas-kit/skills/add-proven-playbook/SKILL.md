@@ -24,7 +24,7 @@ Create `skills/<kebab-name>/`:
 - `SKILL.md`:
   - Frontmatter `name`, plus a third-person `description` with trigger phrases.
   - Body under ~1,500 words: Intake → Readiness audit → Build → Test → Launch → Report.
-  - "Rules that never change" and a "Done when" checklist.
+  - "Rules that never change" and a "Done when" checklist. The rules must start with "Always give exact, clickable links (see `AGENT_RULES.md`)" and say which links to give after each step.
 - `references/`: SOPs, templates, prompts, code, checklists and known issues.
 - Write instructions **for Claude**: imperative, step by step, with the exact tool names.
 

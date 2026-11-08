@@ -67,6 +67,7 @@ Save everything to the project.
 
 ## Rules that never change
 
+- **Always give exact, clickable links** (see `AGENT_RULES.md`). After every post, end with the links to the live Instagram post, its guide page and its Social Flow.
 - **One flow per post, linked to that post's unique guide.** Never use an account-wide default flow.
 - Create the flow immediately after publishing; flows don't replay earlier comments.
 - Kind tone, never put the reader down.

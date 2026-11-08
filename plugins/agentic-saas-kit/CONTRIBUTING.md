@@ -10,6 +10,7 @@ The kit grows only with flows that are **proven**. Ask Claude to "add this to th
 
 ## Each playbook has
 - `skills/<name>/SKILL.md`: trigger phrases; Intake → Audit → Build → Test → Launch → Report; "Rules that never change"; "Done when".
+- Every skill follows `AGENT_RULES.md`. Its rules must include "always give exact, clickable links".
 - `skills/<name>/references/`: SOPs, templates, prompts, code and known issues. No client ids, handles, emails or secrets.
 
 ## Versioning
