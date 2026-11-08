@@ -4,11 +4,11 @@ Proven growth playbooks for SaaS Universe brands, packaged as a Claude plugin.
 
 ## Install (one time)
 
-**Claude (web or desktop):** Customize → Plugins → Add marketplace → Add from a repository → paste `https://github.com/saas-universe/agentic-saas-kit` → turn on **Agentic SaaS Kit**.
+**Claude (web or desktop):** Customize → Plugins → Add marketplace → Add from a repository → paste `https://github.com/myappz-ai/agentic-saas-kit` → turn on **Agentic SaaS Kit**.
 
 **Claude Code:**
 ```
-/plugin marketplace add saas-universe/agentic-saas-kit
+/plugin marketplace add myappz-ai/agentic-saas-kit
 /plugin install agentic-saas-kit@saas-universe
 ```
 
