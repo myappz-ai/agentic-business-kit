@@ -43,7 +43,7 @@ Each write is a preview first. Then call again with `preview_token` and `confirm
 |---|---|
 | post | the media_id (just published) |
 | account | the brand's IG username (when more than one is connected) |
-| trigger | `{"comment_keywords":["KEYWORD"],"dm_keywords":["KEYWORD"]}` |
+| trigger | `{"comment_keywords":["KEYWORD"],"dm_keywords":["KEYWORD"]}`. Comment keywords are per post, so a reused word is fine. DM keywords are account-wide: set them only when no other active flow uses the word (`list_social_flows`), otherwise `[]`. A reused word gets a numbered resource address (`japan-2`). |
 | public_reply_variants | 3–4 short, friendly replies, e.g. "Sent! Check your DMs 📩", "Done ✅ Look in your DMs" |
 | dm_message | "Here's your free <guide name> 📘 <one line on what's inside>. Tap below 👇" (max 640 characters) |
 | attachment | `{"url": "<that post's guide URL>"}` |

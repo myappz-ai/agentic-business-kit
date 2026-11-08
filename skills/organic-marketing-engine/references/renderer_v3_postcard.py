@@ -2,7 +2,7 @@
 
 Every slide: white ground, round avatar, name + optional blue verified badge,
 grey title, bold headline with an accent underline on every line, plain body.
-Slide 1 shows "Swipe ->" (and an optional footer such as "Free guide at the end ->"),
+Slide 1 shows "Swipe ->" (and an optional footer such as "Free gift on slide 4 ->"),
 other slides show "n/N".
 
 Usage (Composio workbench or any Python with Pillow):
@@ -17,7 +17,9 @@ spec = {
   "accent": [98,124,226],                        # underline + footer colour (optional)
   "font": "/mnt/files/fonts/Figtree.ttf",        # variable Figtree (optional)
   "head_size": 54, "body_size": 46,              # optional
-  "slides": [ {"head": "...", "body": "...", "footer": "Free guide at the end ->"}, ... ]
+  "slides": [ {"head": "...", "body": "...", "footer": "Free gift on slide 4 ->"},
+              {"head": "FREE: <doc title>", "body": "- teaser 1\n- teaser 2\n- teaser 3\nComment KEYWORD and I'll send you the doc"},  # slide 4 gift preview
+              ... ]
 }
 Fonts: download Figtree once into /mnt/files/fonts/Figtree.ttf from
 https://github.com/google/fonts/raw/main/ofl/figtree/Figtree%5Bwght%5D.ttf

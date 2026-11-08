@@ -14,11 +14,12 @@ spec = {
   "font": "/mnt/files/fonts/Figtree.ttf",
   "slides": [
     {"kind": "cover", "head": "7 Japanese ideas that quietly change how you work",
-     "highlight": "quietly change", "sub": "Save this. Free guide at the end →"},
+     "highlight": "quietly change", "sub": "Save this. 🎁 Free gift on slide 4 →"},
     {"kind": "item", "num": 1, "word": "Kaizen", "meaning": "Small steps, every day.",
      "body": "Improve one tiny thing daily. ...", "watermark": "改善"},   # watermark optional
+    {"kind": "recap", "head": "FREE cheat sheet: <title>", "lines": ["- teaser 1", "- teaser 2", "- teaser 3", "Comment JAPAN and I'll send it"]},   # slide 4 gift preview
     {"kind": "recap", "head": "Screenshot this", "lines": ["1. Kaizen - small steps", "..."]},
-    {"kind": "cta", "head": "Comment JAPAN", "body": "and I'll DM you the free guide.\nSend this to someone you care about."}
+    {"kind": "cta", "head": "Comment JAPAN", "body": "and I'll send you the free cheat sheet.\nSend this to someone you care about."}
   ]
 }
 Watermarks in non-Latin scripts need a font that has the glyphs (e.g. Noto Sans JP at
