@@ -50,9 +50,11 @@ Each write is a preview first. Then call again with `preview_token` and `confirm
 | button_label | "Get the guide" (max 20 characters) |
 | crm | `{"tags":["ig-<keyword-lowercase>"]}` |
 | once_per_person | true |
+| follow_gate | `{"enabled": true, "message": "Almost there! 🙌 Follow @<handle>, then reply DONE here and I'll send your free <guide name> 📘"}`. **On by default.** The guide is sent only after the follow is verified. The platform currently waits for the typed word "done", so the message must say "reply DONE". |
 
 Then:
 - `test_social_flow` with the comment "KEYWORD please". It must return `would_fire: true`.
+  - The dry run covers the first DM only. The follow check after "done" can only be confirmed live.
 - **Live test (first post for each brand only):** someone comments the keyword from a *different* Instagram account. Comments from the brand's own account never trigger a flow.
   - Check `get_social_flow_logs`: `dms_sent ≥ 1`, `contacts_linked ≥ 1`.
   - Check the contact exists in the CRM with tag `ig-<keyword>`.
@@ -61,4 +63,5 @@ Then:
 - A flow only reacts to comments made **after** it is created. Earlier comments are not replayed.
 - Meta rules: no DMs to comments older than 7 days. DMs over the hourly limit are queued.
 - Bulk Instagram DMs are not supported. Never scrape phone numbers from profiles.
+- Until the button version of the follow gate ships, every commenter is asked to follow, including existing followers, and only the typed word "done" confirms.
 - `create_short_link` is broken (missing `is_active` column). Use full URLs.
