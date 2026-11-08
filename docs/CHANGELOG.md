@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.3.7 – 8 Nov 2026
+- get-started reads shared documents (tax or registration certificates, invoices, visiting cards) and fills the profile from them. Fields with no tool are sent to the screen and reported as a platform gap.
+
 ## 0.3.6 – 8 Nov 2026
 - get-started asks for tax and registration IDs by country (GSTIN/PAN, EIN, VAT, TRN, ABN, BN, UEN and others), never assumes India, and sets currency and timezone to match.
 

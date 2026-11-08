@@ -82,7 +82,9 @@ Fill what the user tells you with `update_business_profile`. Preview the brief a
 | Singapore | UEN and GST registration number |
 | Anywhere else | "Your business tax ID and company registration number, as on your invoices" |
 
-If the website or a public registry already shows them, fill them and don't ask. Also set the base currency and timezone that match the country. If the account has no field for that country's ID, say so plainly and give the screen to finish it (Settings → Business Profile).
+If the website or a public registry already shows them, fill them and don't ask. Also set the base currency and timezone that match the country. **Documents count as a source too.** If the user shares a tax or registration certificate, invoice, letterhead or visiting card, read it and fill every field it shows (legal name, tax ID, registration number, registered address, directors or owner and their role). On their "go", save what the account's tools accept. For anything no tool can save, tell the user the exact screen to finish it, and report the missing tool to your platform provider so it gets built.
+
+If the account has no field for that country's ID, say so plainly and give the screen to finish it (Settings → Business Profile).
 
 Logo: offer it, but it's optional.
 - If they have one, upload it: `get_logo_upload_url`, then PUT the file. If the upload link fails or expires, send it as `image_base64` (about 256×256 PNG) to `set_business_logo`.
