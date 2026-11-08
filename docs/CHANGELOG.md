@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.2 – 8 Nov 2026
+- get-started, from the first live new-client test (sample dental clinic):
+  - Step 1 handles a new account with a placeholder name.
+  - Step 3 saves the business profile together with the brief on one "yes", and has a logo fallback (inline upload when the upload link fails; a placeholder mark when the client has no logo).
+
 ## 0.3.1 – 8 Nov 2026
 - New rule 4 in `AGENT_RULES.md`: **connection order** (platform account → official connectors → Composio or anything the user already uses). Never block a working Composio setup. Explain each connection in one plain line.
 - `CONNECTORS.md` reorganised by that order. get-started checks connections in that order.

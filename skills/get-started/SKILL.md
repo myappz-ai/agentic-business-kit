@@ -14,6 +14,8 @@ Call the account connector's `get_business_profile`.
 
 **Connected:** say "Connected to <business name>." Ask the user to confirm that's the right business. If it isn't, stop: the wrong account is connected.
 
+On a brand-new account the business name is often empty, or the account still has a placeholder name. Show the account name you see (`sub_account.name` from `get_business_profile`) and ask whether it's the right account. If it is, the business name saved in Step 3 is what customers see. If the user also wants the account itself renamed, use a rename tool when the platform provides one; otherwise tell them where the agency dashboard does it.
+
 **Not connected:** the user has to add the connection once, in their agent's own settings. An agent cannot add a connection from a chat message. Give the steps for the agent you are running in:
 - **Claude:** open [Claude connectors](https://claude.ai/settings/connectors) → **Add custom connector** → paste the account's connection link → **Add** → sign in if asked. Then start a new chat and say "Get started" again.
 - **ChatGPT:** open [ChatGPT plugins](https://chatgpt.com/plugins) → **+** → **Add custom MCP server** → paste the connection link under *Connection* → create it as a plugin → install it → start a new chat, type **@** and pick it → say "Get started".
@@ -45,7 +47,12 @@ Everything else is optional.
 
 Ask only the missing questions, 2–3 at a time, in the user's words. Never invent answers. Save with `save_business_brief`: show the preview, then confirm only after the user's yes.
 
-Logo: offer it, but it's optional (`set_business_logo`).
+Also save the core profile with `update_business_profile` (brand name, industry, email, phone, address, owner). Preview both the brief and the profile together as one review table, and save both on one "yes".
+
+Logo: offer it, but it's optional.
+- If they have one, upload it: `get_logo_upload_url`, then PUT the file. If the upload link fails or expires, send it as `image_base64` (about 256×256 PNG) to `set_business_logo`.
+- If they don't have one, offer a simple placeholder mark in their brand colours, and say they can replace it any time.
+- Preview, then save on their yes.
 
 ## Step 4 – Check every channel
 Run these read-only checks and show **one** table: Channel | Status ✅ / ⚠️ / ❌ | What it means | Fix (clickable link).
