@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.9 – 8 Nov 2026
+- New `references/industry-packs.md`: starter pillars, topics, free resources, keywords, next step and "never" rules for 19 industries. All marked Starter until proven.
+- organic-marketing-engine: three layers (method → industry pack → brand style). The brand's style is saved in the account (`organic_style`) so it survives agent changes and kit updates.
+- "Adding what works": a practice joins the method or a pack only after beating the 30-post median on 2+ businesses.
+
 ## 0.3.8 – 8 Nov 2026
 - organic-marketing-engine documents the full daily posting system: 3 posts a day in two carousel kinds, the 10-slide shape with "Free gift on slide 4" on slide 1 and a gift preview on slide 4, comment-to-DM on every post, the virality pattern and the nightly score.
 - Keyword rules: one easy word (3–8 letters); reuse allowed with per-post flows, numbered resource addresses and DM keywords only when unused.

@@ -18,7 +18,7 @@ Call `query_custom_values` with search `agentic_kit_setup`. If it's missing, say
 2. Collect the answers with AskUserQuestion. Only ask for what the profile or Instagram can't tell you:
    - the Instagram handle
    - the audience
-   - the 3 pillars, defaulting to: 08:00 core expertise, 13:00 universal/uplifting for that audience, 20:00 sales and growth
+   - the industry pack from `references/industry-packs.md` (match it from the profile; ask one question only if two packs fit). It fills the 3 pillars, starter topics, free-resource ideas and keywords.
    - the owner's name, title and photo for slide headers
    - the bonus-block offer and URL (no dates, no prices)
    - the guide skin: post, editorial or night
@@ -111,6 +111,22 @@ This is the pattern the kit sets up. Follow it exactly; only the topics and the 
 - Nightly: score = reach + 3×comments + 3×shares + 2×saves + likes, compared with the 30-post median. Double down on winners with a "Part 2", drop what loses, keep at least 5 unused topics per slot.
 - Kind tone always. Facts only from pages actually opened. No income or result promises.
 
+## The brand's own style (saved in the account)
+
+Three layers, read in this order every run:
+1. **The method** (this skill): the same for everyone; changed only by the kit's maintainers with evidence.
+2. **The industry pack** (`references/industry-packs.md`): the starting topics for that industry.
+3. **The brand's style**: its voice, audience, pillars, offer, used keywords and its own learnings. It always wins over the pack.
+
+Save the brand's style in the account with `set_custom_value` (name `organic_style`, category `agentic-kit`): a short summary covering voice, audience, pillars, offer, bonus block, competitors to avoid and the top 3 learnings. Keep the full detail in the LOCKED doc. The nightly review updates both. This way the style survives a change of agent and kit updates never overwrite it.
+
+## Adding what works
+
+A new practice goes into the method or a pack only when the numbers prove it:
+- It beat the brand's 30-post median score, on at least 2 businesses, over 30+ posts.
+- Write the evidence next to the rule (accounts, dates, median vs result), as `references/content-rules.md` does.
+- Until then it stays in that brand's own style as a test.
+
 ## Rules that never change
 
 - **Always give exact, clickable links** (see `docs/AGENT_RULES.md`). After every post, end with the links to the live Instagram post, its guide page and its Social Flow.
@@ -138,4 +154,5 @@ This is the pattern the kit sets up. Follow it exactly; only the topics and the 
 - [ ] 3 slot tasks, nightly review and backstop scheduled, with the owner's authorization quoted
 - [ ] First post's carousel has the slide-1 gift line and the slide-4 preview
 - [ ] LinkedIn PDF copy posted (or LinkedIn marked ⚠️ not connected)
+- [ ] Industry pack applied and `organic_style` saved in the account
 - [ ] Hand-over summary sent
