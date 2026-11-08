@@ -1,0 +1,134 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<title>{{GUIDE_TITLE}} · {{OWNER_NAME}}</title><meta name="description" content="{{ONE_LINE_PROMISE}} Free guide by {{OWNER_NAME}}."><meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+/* ---------- SKINS: only these tokens change ---------- */
+body.post{--bg:#ffffff;--bg2:#f6f6f3;--ink:#161616;--muted:#5b5f66;--line:#e6e6e3;--accent:#1d9bf0;--hl:#fce883;--btn:#fce883;--btnink:#161616;--dark:#161616;--darkink:#fff;--head:'Figtree';--radius:16px}
+body.editorial{--bg:#fbf8ec;--bg2:#f3eedb;--ink:#1b1a17;--muted:#6a655a;--line:#e5dfc9;--accent:#c2410c;--hl:#fce883;--btn:#1b1a17;--btnink:#fbf8ec;--dark:#1b1a17;--darkink:#fbf8ec;--head:'Fraunces','Lora',Georgia;--radius:6px}
+body.night{--bg:#0f1115;--bg2:#181b22;--ink:#f2f2ee;--muted:#a2a7b1;--line:#2a2e37;--accent:#fce883;--hl:#fce883;--btn:#fce883;--btnink:#0f1115;--dark:#fce883;--darkink:#0f1115;--head:'Figtree';--radius:18px}
+/* ---------- FORMAT: identical for every guide ---------- */
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Figtree,Inter,system-ui,sans-serif}
+.page{width:210mm;height:297mm;padding:20mm 18mm 18mm;position:relative;overflow:hidden;page-break-after:always;background:var(--bg)}
+.hdr{display:flex;align-items:center;gap:10px}
+.av{width:38px;height:38px;border-radius:50%;background:var(--ink);color:var(--bg);display:grid;place-items:center;font-weight:800;font-size:14px}
+.nm{font-weight:700;font-size:14px}.nm small{display:block;font-weight:500;color:var(--muted);font-size:11.5px}
+.tick{display:inline-block;width:13px;height:13px;border-radius:50%;background:#1d9bf0;color:#fff;font-size:8px;text-align:center;line-height:13px;margin-left:4px;vertical-align:1px}
+.kicker{display:inline-block;font-weight:800;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+h1{font-family:var(--head),Figtree,Inter,Georgia,serif;font-size:52px;line-height:1.04;letter-spacing:-.025em;margin:8mm 0 6mm;font-weight:800;text-wrap:balance}
+h2{font-family:var(--head),Figtree,Inter,Georgia,serif;font-size:38px;line-height:1.1;letter-spacing:-.015em;margin:3mm 0 5mm;font-weight:800;text-wrap:balance}
+.hl{background:linear-gradient(transparent 58%,var(--hl) 58%);color:inherit}
+body.night .hl{background:none;color:var(--hl)}
+p,li{font-size:16.5px;line-height:1.62}
+.muted{color:var(--muted)}
+.meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:8mm}
+.chip{border:1px solid var(--line);border-radius:99px;padding:6px 12px;font-size:12px;font-weight:600;background:var(--bg2)}
+.foot{position:absolute;left:18mm;right:18mm;bottom:10mm;display:flex;justify-content:space-between;font-size:10.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:7px}
+.big-num{font-family:var(--head),Figtree,Inter;font-weight:800;font-size:150px;line-height:1;color:var(--hl);position:absolute;right:14mm;bottom:22mm;opacity:.9}
+body.post .big-num,body.editorial .big-num{color:var(--bg2);-webkit-text-stroke:2px var(--line)}
+.box{background:var(--bg2);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.step{display:grid;grid-template-columns:44px 1fr;gap:12px;padding:11px 0;border-bottom:1px solid var(--line)}
+.step .n{width:40px;height:40px;border-radius:12px;background:var(--hl);color:#161616;display:grid;place-items:center;font-weight:900}
+.step b{font-size:19px}.step p{margin:2px 0}.step i{font-style:normal;font-size:12.5px;color:var(--muted)}
+.toc li{margin:4px 0}
+.strip{margin-top:8mm;display:flex;align-items:center;justify-content:space-between;gap:12px;border:2px dashed var(--line);border-radius:var(--radius);padding:12px 14px}
+.strip b{font-size:14px}
+.mini{background:var(--btn);color:var(--btnink);font-weight:800;font-size:12.5px;padding:9px 14px;border-radius:99px;white-space:nowrap}
+table{width:100%;border-collapse:collapse;font-size:15px}
+td,th{border-bottom:1px solid var(--line);padding:13px 6px;text-align:left;vertical-align:top}
+th{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.check{display:inline-block;width:14px;height:14px;border:2px solid var(--ink);border-radius:4px;margin-right:8px;vertical-align:-2px}
+.bonus{background:var(--dark);color:var(--darkink);border-radius:calc(var(--radius) + 8px);padding:16mm 13mm;margin-top:6mm}
+.bonus h2{color:var(--darkink)}
+.bonus p{color:inherit;opacity:.85;font-size:16px}
+.ribbon{display:inline-block;background:var(--hl);color:#161616;font-weight:900;font-size:11px;letter-spacing:.16em;padding:6px 12px;border-radius:99px}
+body.night .bonus .ribbon{background:#0f1115;color:#fce883}
+.gets{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:7mm 0}
+.get{border:1px solid rgba(127,127,127,.35);border-radius:12px;padding:12px;font-size:13.5px;font-weight:600}
+.cta{display:inline-block;background:var(--hl);color:#161616;font-weight:900;font-size:18px;padding:15px 26px;border-radius:99px;text-decoration:none}
+body.night .bonus .cta{background:#0f1115;color:#fce883}
+body.editorial .bonus .cta{background:var(--hl)}
+.url{font-weight:800;font-size:20px;margin-top:5mm}
+.quote{font-family:var(--head),Figtree,Inter;font-size:22px;line-height:1.35;font-weight:700}
+.page > :not(.foot):not(.big-num){zoom:1.12}
+.bonus{padding:12mm 10mm}
+.res{display:inline-block;margin-top:3px;font-size:12.5px;font-weight:700;color:var(--accent);text-decoration:none;border-bottom:1px solid currentColor}
+body.post .res{color:#1565c0} body.editorial .res{color:#b4410c}
+.how{font-size:13.5px;margin:3px 0 0}
+.how b{font-size:inherit !important}
+.step{padding:7px 0 !important}
+.page h2{margin-bottom:3mm}
+.watch{display:grid;grid-template-columns:130px 1fr;gap:14px;align-items:center;border:1px solid var(--line);border-radius:var(--radius);padding:12px;margin-top:8mm;background:var(--bg2)}
+.thumb{height:74px;border-radius:10px;background:var(--ink);display:grid;place-items:center;color:var(--bg);font-size:26px}
+.slot{outline:2px dashed #e05a2b;outline-offset:3px}
+.kit{display:flex;flex-direction:column;gap:7px;margin:4mm 0 2mm}
+.kit a{display:grid;grid-template-columns:70px 1fr;gap:10px;align-items:start;text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:12px;padding:9px 12px;background:var(--bg2)}
+.kit .t{font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding-top:3px}
+.kit b{font-size:14px}.kit span.d{display:block;font-size:12.5px;color:var(--muted)}
+.bonus.compact{padding:9mm 9mm;margin-top:5mm}
+.bonus.compact h2{font-size:28px}
+.tpl{display:block;margin-top:4px;font-size:12.5px;background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:5px 8px;font-family:ui-monospace,Menlo,monospace}
+.nums{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:5mm}.nums div{border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:var(--bg2)}.nums b{display:block;font-size:26px;font-weight:900}.nums span{font-size:12px;color:var(--muted)}
+@media screen{
+body{background:#eef0f3}
+.page{width:auto;max-width:820px;height:auto;min-height:0;margin:16px auto;padding:28px 22px 22px;border-radius:18px;box-shadow:0 2px 14px rgba(0,0,0,.06);overflow:visible}
+.page > :not(.foot):not(.big-num){zoom:1}
+.foot{position:static;margin-top:22px}
+.big-num{display:none}
+h1{font-size:clamp(32px,7vw,52px)}
+.nums,.kit a{grid-template-columns:1fr 1fr}
+.kit a{grid-template-columns:64px 1fr}
+.watch{grid-template-columns:72px 1fr}.thumb{height:56px}
+}
+@media screen and (max-width:520px){.nums{grid-template-columns:1fr 1fr}.strip{flex-direction:column;align-items:flex-start}}
+</style></head><body class="{{SKIN: post | editorial | night}}">
+<!-- ============ PAGE 1: HOOK ============ -->
+<section class="page">
+ <div class="hdr"><div class="av">{{INITIALS}}</div><div class="nm">{{OWNER_NAME}}<span class="tick">✓</span><small>{{OWNER_TITLE}}</small></div></div>
+ <div style="margin-top:10mm"><span class="kicker">Free guide · {{KEYWORD}}</span></div>
+ <h1>{{TITLE_START}} <span class="hl">{{TITLE_HIGHLIGHT}}</span></h1>
+ <p class="muted" style="font-size:17px">{{SUBTITLE: who it is for + what they get}}</p>
+ <div class="meta"><span class="chip">⏱ {{N}}-minute read</span><span class="chip">🔗 {{N}} free resources</span><span class="chip">🎁 Bonus on page 3</span></div>
+ <!-- OPTIONAL numbers row: only real, sourced numbers. Delete the block if none. -->
+ <div class="nums">
+  <div><b>{{NUMBER}}</b><span>{{WHAT IT MEANS}}</span></div>
+  <div><b>{{NUMBER}}</b><span>{{WHAT IT MEANS}}</span></div>
+ </div>
+ <!-- "Watch first": owner's own YouTube/Reel for this topic if one exists, else "How to use this guide" -->
+ <div class="watch"><div class="thumb">▶</div><div><b>{{Watch first: VIDEO TITLE | How to use this guide}}</b><p class="how">{{one line + link}}</p></div></div>
+ <div class="box" style="margin-top:5mm"><b>Why now:</b> {{one or two sentences, sourced}}</div>
+ <div class="foot"><span>{{@HANDLE}}</span><span>1 / 3</span></div>
+</section>
+
+<!-- ============ PAGE 2: PLAYBOOK (5-7 steps) ============ -->
+<section class="page">
+ <span class="kicker">The playbook · screenshot this</span>
+ <h2>{{N}} steps, with <span class="hl">{{templates / prompts / scripts}} to copy</span></h2>
+ <!-- repeat one .step per step; last step gets style="border-bottom:0" -->
+ <div class="step"><div class="n">1</div><div><b>{{STEP NAME}}</b><p class="how"><b>How:</b> {{what to do, concretely}}</p><span class="tpl">{{copy-paste template, optional}}</span> <a class="res" href="{{VERIFIED URL}}">{{resource name}} →</a></div></div>
+ <div class="step" style="border-bottom:0"><div class="n">2</div><div><b>{{STEP NAME}}</b><p class="how"><b>How:</b> {{...}}</p></div></div>
+ <div class="strip"><b>{{one-line summary of the whole method}}</b><span class="mini">Toolkit + bonus →</span></div>
+ <div class="foot"><span>{{@HANDLE}}</span><span>2 / 3</span></div>
+</section>
+
+<!-- ============ PAGE 3: TOOLKIT + BONUS ============ -->
+<section class="page">
+ <span class="kicker">Free toolkit · tap to open</span>
+ <h2 style="font-size:28px">{{4-6 resources worth bookmarking}}</h2>
+ <div class="kit">
+  <!-- type label: GUIDE | PDF | REPO | DOCS | VIDEO | CASE. Every URL opened and checked first. -->
+  <a href="{{VERIFIED URL}}"><span class="t">{{TYPE}}</span><span><b>{{Resource name}}</b><span class="d">{{one-line description}}</span></span></a>
+  <a href="{{VERIFIED URL}}"><span class="t">{{TYPE}}</span><span><b>{{Resource name}}</b><span class="d">{{one-line description}}</span></span></a>
+ </div>
+ <!-- BONUS BLOCK: universal. No dates, event names or prices. Same copy on every guide of this brand. -->
+ <div class="bonus compact">
+  <span class="ribbon">YOUR BONUS</span>
+  <h2 style="margin-top:4mm">{{BONUS_HEADLINE}}</h2>
+  <p>{{BONUS_BODY}}</p>
+  <a class="cta" href="{{BONUS_URL}}?utm_source=instagram&amp;utm_medium=guide&amp;utm_campaign={{keyword-lowercase}}">{{BONUS_BUTTON}} →</a>
+ </div>
+ <div class="foot"><span>{{share line, e.g. Share this with a friend who ...}} · {{@HANDLE}}</span><span>3 / 3</span></div>
+</section>
+</body></html>
