@@ -31,3 +31,13 @@ Paid ads, bulk messages and anything a customer sees go live only after the user
 
 ## 3. Facts only
 Use only numbers and claims from tools or pages the agent actually opened. No income promises, fake discounts or invented testimonials.
+
+## 4. Connection order: platform first, then official connectors, then Composio
+When a job needs a tool, use the first option that can do it:
+1. **The platform account connector.** CRM, pipelines, WhatsApp, email, calendar, forms, websites, Social Flow, invoices and ad drafts all live there. Always check it first.
+2. **The agent's official connectors.** In Claude: Claude connectors (e.g. Meta Ads, Gmail, Google Drive, Slack, Canva). In ChatGPT: its apps/plugins.
+3. **Composio, or any other connector the user already has.** Use it for whatever 1 and 2 can't do (e.g. Instagram carousel publishing, YouTube, GitHub).
+
+If the user already works with Composio or another connector they prefer, go with it. Don't block, nag, or insist on switching; a working setup beats the "right" one.
+
+**Teach as you go:** when you ask the user to connect something, say in one plain line what it's for and what it will let them do. The goal is that they understand their own setup, not just that it works.

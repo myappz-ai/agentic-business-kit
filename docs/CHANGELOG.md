@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.1 – 8 Nov 2026
+- New rule 4 in `AGENT_RULES.md`: **connection order** (platform account → official connectors → Composio or anything the user already uses). Never block a working Composio setup. Explain each connection in one plain line.
+- `CONNECTORS.md` reorganised by that order. get-started checks connections in that order.
+
 ## 0.3.0 – 8 Nov 2026
 - New **get-started** playbook: the mandatory first-run setup. It connects the account, syncs the business brief, checks Instagram, Meta, WhatsApp, email and calendar, applies the house rules, saves `agentic_kit_setup` in the account, and recommends the first playbook.
 - Every playbook now starts with a setup check, and runs get-started first if setup isn't done.

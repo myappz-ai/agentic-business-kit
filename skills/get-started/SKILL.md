@@ -57,6 +57,8 @@ Run these read-only checks and show **one** table: Channel | Status ✅ / ⚠️
 | WhatsApp + email | `get_channel_readiness` | Instant replies and follow-ups |
 | Calendar | `list_event_types` | Booking appointments |
 
+- Check in this order: the platform account first, then the agent's official connectors, then Composio or anything else the user already uses (`docs/AGENT_RULES.md` rule 4). If the user already has a working Composio connection for something, count it as ✅.
+- For each ⚠️ / ❌, add one plain line on what that connection is for, so the user learns their setup.
 - ❌ items don't block setup. They block only the playbooks that need them, so say which ones.
 - Fixes happen in the user's own account, on its login screens. Never ask for passwords or codes.
 - If a tool reports something odd (an empty or garbled field), report it plainly as a platform issue. Don't guess.
