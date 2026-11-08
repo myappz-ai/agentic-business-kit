@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.8 – 8 Nov 2026
+- organic-marketing-engine documents the full daily posting system: 3 posts a day in two carousel kinds, the 10-slide shape with "Free gift on slide 4" on slide 1 and a gift preview on slide 4, comment-to-DM on every post, the virality pattern and the nightly score.
+- Keyword rules: one easy word (3–8 letters); reuse allowed with per-post flows, numbered resource addresses and DM keywords only when unused.
+- New `references/linkedin-crosspost.md`: every carousel also goes to LinkedIn as a PDF document post, with in-thread replies.
+- Scheduled slot prompts updated to match.
+
 ## 0.3.7 – 8 Nov 2026
 - get-started reads shared documents (tax or registration certificates, invoices, visiting cards) and fills the profile from them. Fields with no tool are sent to the screen and reported as a platform gap.
 

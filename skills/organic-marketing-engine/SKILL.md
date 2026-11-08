@@ -1,13 +1,13 @@
 ---
 name: organic-marketing-engine
-description: Sets up a brand's hands-free Instagram organic marketing engine on its own platform account. It posts 3 carousels a day, and each post gets a comment keyword, its own free guide page, and its own Social Flow that DMs the guide and saves the commenter as a tagged CRM contact. A nightly review rewrites the strategy from real numbers. Use when someone says "setup my organic marketing engine", "set up Instagram autopilot", "comment-to-DM guides", or "copy the 3-posts-a-day flow for my brand".
+description: Sets up a brand's hands-free Instagram organic marketing engine on its own platform account. It posts 3 carousels a day, and each post gets a comment keyword, its own free guide page, and its own Social Flow that DMs the guide and saves the commenter as a tagged CRM contact. The same carousel goes to LinkedIn as a PDF document post with comment replies. A nightly review rewrites the strategy from real numbers. Use when someone says "setup my organic marketing engine", "set up Instagram autopilot", "comment-to-DM guides", or "copy the 3-posts-a-day flow for my brand".
 ---
 
 # Organic Marketing Engine
 
 Run this in four phases, in order. Do not skip the audit. Do not schedule anything until the first post has passed a live end-to-end test.
 
-The content changes per brand. The flow never changes: **post → keyword → unique guide → per-post Social Flow → CRM contact → nightly review**.
+The content changes per brand. The flow never changes: **post → keyword → unique guide → per-post Social Flow → CRM contact → LinkedIn PDF copy → nightly review**.
 
 ## Setup check (always first)
 Call `query_custom_values` with search `agentic_kit_setup`. If it's missing, say "Let's finish your account setup first; it takes about 5 minutes." Then run the **get-started** playbook, and come back here when it's done.
@@ -25,6 +25,7 @@ Call `query_custom_values` with search `agentic_kit_setup`. If it's missing, say
    - the reports channel
    - timezone
    - competitors never to feature
+   - whether LinkedIn is connected (for the PDF copy of every post)
 3. Get the owner's standing authorization **in their own words**. For example: "Post every day without my approval; for every guide, turn on the Social Flow by default for each post." Record the exact quote and the date. Every scheduled prompt quotes it.
 
 ## Phase 1 – Readiness audit
@@ -47,6 +48,8 @@ Follow `references/readiness-audit.md`. Report one table (✅ / ⚠️ / ❌ wit
    - Create the flow per `references/guide-and-flow-spec.md` §4, then run `test_social_flow`.
 5. **Live test**: the owner comments the keyword from a **different** account. Confirm with `get_social_flow_logs` that the DM was sent, and that a CRM contact exists tagged `ig-<keyword>`. Not done until this passes.
 
+   - Post the same slides to LinkedIn as a PDF document per `references/linkedin-crosspost.md`, when LinkedIn is connected.
+
 ## Phase 3 – Schedule
 
 Create the tasks from `references/scheduled-task-prompts.md` with `create_trigger`:
@@ -68,6 +71,46 @@ Send the owner a short summary covering:
 
 Save everything to the project.
 
+## The daily posting system (what every install runs)
+
+This is the pattern the kit sets up. Follow it exactly; only the topics and the brand change. Details: `references/content-rules.md`, `references/linkedin-crosspost.md`, `references/scheduled-task-prompts.md`.
+
+**1. Three posts a day, two kinds of carousel.**
+
+| Slot (brand TZ) | Kind | Pillar | Built for |
+|---|---|---|---|
+| 08:00 | White post-card (v3) | The brand's core expertise (tips, tools, how-tos) | Saves and comments |
+| 13:00 | Cream big-type (v5) | Universal wisdom and life lessons, told for the audience | Shares and saves |
+| 20:00 | White post-card (v3) | Sales and growth for the audience | Comments |
+
+**2. One carousel shape, 10 slides.**
+- Slide 1: a "7 …" hook that promises time, money or a clear result, plus the line **"🎁 Free gift on slide 4 →"**.
+- Slides 2–3: the first items of the list.
+- Slide 4: **the gift preview.** The free resource's title, 3 short teasers of what's inside, a FREE badge, and "Comment KEYWORD and I'll send you the <doc>".
+- Slides 5–9: the rest of the list and a "screenshot this" recap.
+- Slide 10: the CTA again, plus one save line and one share line.
+- Build the free resource page **before** rendering, so slide 4 previews what really exists.
+
+**3. Comment-to-DM on every post.**
+- Caption line 2 asks for the comment: "Comment KEYWORD and I'll send you the free <doc>." Always ask for a **comment**, never "DM me".
+- Each post gets its own free resource page and its own Social Flow: a friendly public reply, then a DM with the link, once per person, with a CRM tag `ig-<keyword>`. Test it before calling the post done.
+- Vary the word for the resource across posts: gift, doc, cheat sheet, guide, checklist, playbook. Keep one word throughout a single post.
+
+**4. Keywords people can type.**
+- One common word, 3–8 letters, letters only, uppercase (JAPAN, AGENT, PRICE). No numbers, symbols or made-up spellings.
+- A word may be reused on a later post. The comment keyword is matched per post, so each post sends its own resource. Give the new resource its own address (`japan-2`, `japan-3`), and only set the DM keyword when no other active flow already uses that word.
+
+**5. LinkedIn copy of every post.**
+- When LinkedIn is connected, the same slides go out as **one PDF document post**, never as single images, so people can save and read the doc.
+- The caption says "Free <doc> on page 4" and asks for the keyword in a comment. Reply to each keyword comment in the comment thread with the link. LinkedIn has no automated DMs.
+
+**6. The virality pattern.**
+- Lists beat stories. Name a specific tool, outcome, time or money saved.
+- Ask for the comment in the first two lines of the caption, above the "more" fold.
+- Win on saves and shares: a recap slide, a save line and a "send this to a friend who…" line on every post.
+- Nightly: score = reach + 3×comments + 3×shares + 2×saves + likes, compared with the 30-post median. Double down on winners with a "Part 2", drop what loses, keep at least 5 unused topics per slot.
+- Kind tone always. Facts only from pages actually opened. No income or result promises.
+
 ## Rules that never change
 
 - **Always give exact, clickable links** (see `docs/AGENT_RULES.md`). After every post, end with the links to the live Instagram post, its guide page and its Social Flow.
@@ -81,6 +124,9 @@ Save everything to the project.
 - Only the two house styles. Illustrated and photo-strip carousels are rejected.
 - Verify the Composio Instagram username before every publish.
 - Never post twice in one slot.
+- Every carousel announces the free gift on slide 1 and previews it on slide 4.
+- Keywords: one easy word, 3–8 letters. A reused word always sends the resource of the post it was commented on.
+- LinkedIn gets a PDF document post, never single images.
 
 ## Done when
 
@@ -90,4 +136,6 @@ Save everything to the project.
 - [ ] LOCKED doc saved
 - [ ] First post live; `test_social_flow` would_fire:true; a live comment from a second account produced the DM and a tagged contact
 - [ ] 3 slot tasks, nightly review and backstop scheduled, with the owner's authorization quoted
+- [ ] First post's carousel has the slide-1 gift line and the slide-4 preview
+- [ ] LinkedIn PDF copy posted (or LinkedIn marked ⚠️ not connected)
 - [ ] Hand-over summary sent
