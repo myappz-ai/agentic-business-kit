@@ -113,7 +113,13 @@ This is the pattern the kit sets up. Follow it exactly; only the topics and the 
 
 **7. Reels.**
 - A slot can carry a talking-head reel instead of a carousel. Same keyword, guide and per-post flow.
-- Publishing a video needs a public link: see `references/publishing.md` → Reels.
+- **Hands-free:** the afternoon slot can render its own reel with an AI avatar from a script in the tracker doc, publish it and make its flow. See `references/reels-auto.md`. A video the owner filmed still works: see `references/publishing.md` → Reels.
+- Every reel also goes to LinkedIn (native video) and YouTube Shorts, with the guide link in the first comment or description (`references/reel-crosspost.md`).
+- Styles and the content mix (4 AI · 3 business · 2 personal · 1 quote per 10): `references/reel-styles.md`.
+
+**8. One tracker doc.**
+- The Organic Marketing Tracker (Overview · Reels · Carousels) holds the plan, every post's status and links, and its numbers. The slots add or update their row, and the nightly report fills in the numbers (`references/tracker-doc.md`).
+- To run it all in the cloud with the laptop closed, use `references/cloud-routine-templates.md` and `docs/cloud-autopilot.md`.
 
 ## The brand's own style (saved in the account)
 

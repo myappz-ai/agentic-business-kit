@@ -9,9 +9,9 @@ This sets up 3 posts a day, each with its own guide, comment-to-DM flow and foll
 | 06:15 | Viral watch | Scrapes the creators you track (Apify). Any post with ≥1,000 likes or ≥200 comments becomes an original idea (hook + keyword + slot) in your Slack self-DM. |
 | 06:35 | News picks | Scans the OpenAI and Anthropic news and release notes. Posts up to 3 picks with a hook, keyword and slot to Slack. |
 | 08:00 | Morning carousel | Playbook carousel → guide page → Social Flow with follow gate → test → LinkedIn PDF → Slack report. |
-| 15:00 | Afternoon reel | Posts the newest queued reel. If none is queued, it posts a carousel instead. |
+| 15:00 | Afternoon reel | Takes the next Queued reel from the tracker doc, renders it with an AI avatar (HeyGen), posts it, makes its flow, then posts it to LinkedIn and YouTube Shorts. A carousel is the fallback. |
 | 20:00 | Evening carousel | Story or tool-demo carousel, same chain as 08:00. |
-| 23:30 | Nightly report | Reach, likes, comments, shares, saves, DMs sent and follows verified for each post, vs your median. It fixes any missing flow or follow gate, then suggests one change for tomorrow. |
+| 23:30 | Nightly report | Reach, likes, comments, shares, saves, DMs sent and follows verified for each post, vs your median. It fixes any missing flow or follow gate, catches up missed cross-posts, updates the tracker doc, then suggests one change for tomorrow. |
 
 Topic order for every slot: today's news pick → viral-watch idea → the next row of your 30-day queue.
 
@@ -39,15 +39,16 @@ Topic order for every slot: today's news pick → viral-watch idea → the next 
 - **Step 6:** Slack report with the post link, guide URL, keyword, flow ID and test result.
 - **Never:** post the same thing twice, create a second flow for one post, use one account-wide flow, send bulk DMs, or name competitors or the creators you track.
 
-## Reels: the one manual step
+## Reels: hands-free, or your own video
 
-Video can't be uploaded to the Vault through the API yet, so for now:
+- **Hands-free:** write the reel scripts in the tracker doc's Reels tab (`skills/organic-marketing-engine/references/tracker-doc.md`), then set a row to **Queued**. The 15:00 routine renders it with your approved avatar look and posts it (`reels-auto.md`). It needs avatar-tool API credit, so turn on auto-reload.
+- **Your own video:** upload the .mp4 in **Settings → Vault** with "Keep original file", copy its public link, and post `🎬 Reel ready · <URL> · KEYWORD · <topic>` in your Slack self-DM. That line wins over the queue.
 
-1. Make the reel, then upload the .mp4 in **Settings → Vault** with "Keep original file".
-2. Copy its public CDN link.
-3. Post this line in your Slack self-DM: `🎬 Reel ready · <Vault URL> · KEYWORD · <topic> · write it`
+## Reports and alerts
 
-The 15:00 routine takes the newest unposted line. If there is none, it posts a carousel instead. This step goes away once the Vault accepts video uploads.
+- Every slot report starts "✅ <slot> done" and lists what was completed and what was skipped. A failed step never stops the rest.
+- Platform errors go straight to your developer as a DM (tool, exact error, post link, workaround), at most once per error per day. Billing problems come to you.
+- Prompt templates for all 6 routines: `skills/organic-marketing-engine/references/cloud-routine-templates.md`. Keep a copy of each live prompt in your private repo.
 
 ## Known limits
 

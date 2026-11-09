@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.0 – 9 Nov 2026
+- **Hands-free reels.** New `reels-auto.md`: the afternoon slot takes the next Queued reel from the tracker doc (or writes one), renders it with an AI avatar (approved looks only, captions on, never re-graded), publishes it through the Instagram Graph API when needed, and makes its flow. A carousel is the fallback.
+- **Reel cross-post.** New `reel-crosspost.md`: every reel also goes to LinkedIn (native video, link in the first comment) and YouTube Shorts (link in the description and a comment), with duplicate checks and a nightly retry.
+- **Organic Marketing Tracker doc.** New `tracker-doc.md`: Overview · Reels · Carousels. The slots add or update their row, and the nightly report fills in the numbers and the weekly line.
+- **Reel styles and content mix.** New `reel-styles.md` (8 styles; mix of 4 AI · 3 business · 2 personal · 1 quote per 10), marked Starter.
+- **Cloud routine templates.** New `cloud-routine-templates.md`: 6 routines, developer alerts, "✅ done" reports, keep-going-on-failure.
+- `docs/cloud-autopilot.md` and known issues updated (avatar API credit, YouTube shared quota).
+
 ## 0.3.11 – 8 Nov 2026
 - **Follow gate on by default.** Every per-post Social Flow asks the commenter to follow first and sends the guide only after the follow is verified. The message says "reply DONE", because that is the word the platform waits for today.
 - **Reels.** New `publishing.md` → Reels: upload the original .mp4 to the Vault, take its public link from the preview, check it, publish, then create the flow straight away. SKILL.md lets a slot carry a reel.

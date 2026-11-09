@@ -5,7 +5,7 @@
 ### Your AI agent runs your marketing and sales.
 **It brings in leads, saves them in your CRM and follows up for you, using playbooks proven on a real business.**
 
-![Version](https://img.shields.io/badge/version-0.3.11-1f6feb?style=flat-square)
+![Version](https://img.shields.io/badge/version-0.4.0-1f6feb?style=flat-square)
 ![Works with Claude](https://img.shields.io/badge/works%20with-Claude-d97757?style=flat-square)
 ![Works with ChatGPT](https://img.shields.io/badge/works%20with-ChatGPT-10a37f?style=flat-square)
 ![Industries](https://img.shields.io/badge/industries-19-8250df?style=flat-square)
@@ -34,7 +34,7 @@
 | Just say | What your agent does for you |
 |---|---|
 | 🧭 **"Get started"** | Share your website, your company name or a document like a tax certificate. Your agent fills in your business profile, logo and social links, checks every channel (Instagram, WhatsApp, email, calendar, ads) and gives you a link to fix anything missing. |
-| 📱 **"Setup my organic marketing engine"** | 3 carousel posts a day on Instagram, plus a PDF copy on LinkedIn. Every post offers a free gift. Anyone who comments the keyword gets a DM, follows you, and then gets the gift and is saved as a lead. Every night it learns from the numbers. |
+| 📱 **"Setup my organic marketing engine"** | 3 posts a day on Instagram: 2 carousels (with a PDF copy on LinkedIn) and 1 reel your AI avatar makes by itself (also posted to LinkedIn and YouTube Shorts). Every post offers a free gift. Anyone who comments the keyword gets a DM, follows you, then gets the gift and is saved as a lead. One tracker doc shows every post and its numbers, and every night it learns from them. |
 | 🎯 **"Launch lead form ads"** | Facebook and Instagram lead ads that drop leads straight into your CRM, with instant WhatsApp and email replies and a call reminder for your team. Built as drafts; nothing goes live without your "go ahead". |
 | 🧩 **"Add this to the Agentic Business Kit"** | When something works for your business, your agent turns it into a playbook. It becomes a shared rule only once real numbers prove it. |
 
