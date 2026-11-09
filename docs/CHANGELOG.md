@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.5.0 – 9 Nov 2026
+- **The skill is now "Organic Marketing"** (`skills/organic-marketing`, was `organic-marketing-engine`). Old trigger phrases still work, and "Set up organic marketing" is the new one.
+- **ElevenLabs voice (optional, Starter)** in `reels-auto.md`: render the avatar reel with a cloned or branded voice through an audio URL.
+- README: a new "For agencies" section on running the same flow for every client.
+
 ## 0.4.0 – 9 Nov 2026
 - **Hands-free reels.** New `reels-auto.md`: the afternoon slot takes the next Queued reel from the tracker doc (or writes one), renders it with an AI avatar (approved looks only, captions on, never re-graded), publishes it through the Instagram Graph API when needed, and makes its flow. A carousel is the fallback.
 - **Reel cross-post.** New `reel-crosspost.md`: every reel also goes to LinkedIn (native video, link in the first comment) and YouTube Shorts (link in the description and a comment), with duplicate checks and a nightly retry.

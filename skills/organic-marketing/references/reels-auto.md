@@ -4,6 +4,7 @@ The afternoon slot can make its own talking-head reel every day: a script from t
 
 ## Needs
 - An AI avatar video tool connected through Composio (HeyGen today), with **API credit** (its API wallet is separate from the app plan). Turn on auto-reload, or the nightly report warns when the balance is low.
+- Optional: ElevenLabs, for a cloned or branded voice (see Voice below).
 - The owner's avatar, and a list of **approved looks** saved in the LOCKED doc (look IDs plus a one-line description). Also list the looks that must never be used. The agent never picks a look outside the approved list.
 - The tracker doc (`tracker-doc.md`) with a Reels tab, or the owner's queue.
 
@@ -21,6 +22,12 @@ The afternoon slot can make its own talking-head reel every day: a script from t
 - Poll the status every 20 s for up to 25 min. Use `video_url_caption` when present, otherwise `video_url`.
 - **Never brighten, re-grade or re-encode** the video. Owners notice.
 - On a credit error or any render error, go to the fallback. Billing problems go in the owner's report, not to the developers.
+
+## Voice
+- **Default:** the avatar look's own voice (`default_voice_id`). This is what the reference account runs every day.
+- **Optional, ElevenLabs:** for the owner's cloned voice or a branded voice. Generate the speech from the script with ElevenLabs (Composio `elevenlabs` toolkit or the ElevenLabs connector, the owner's voice ID, mp3). Put it at a public URL, then render with `"voice": {"type": "audio", "audio_url": "<mp3 url>"}` instead of the text voice. Keep `caption: true`.
+- Status: **Starter.** Not yet run on the reference account, so do the first ElevenLabs reel attended and check the lip sync before you schedule it.
+- Save the voice choice and the voice ID in the LOCKED doc, never in a shared kit.
 
 ## Publish
 - Build the guide first (`guide-and-flow-spec.md`): it must deliver exactly what the CTA promises (same title, same number of points, steps or prompts).

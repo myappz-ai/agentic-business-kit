@@ -5,13 +5,13 @@
 ### Your AI agent runs your marketing and sales.
 **It brings in leads, saves them in your CRM and follows up for you, using playbooks proven on a real business.**
 
-![Version](https://img.shields.io/badge/version-0.4.0-1f6feb?style=flat-square)
+![Version](https://img.shields.io/badge/version-0.5.0-1f6feb?style=flat-square)
 ![Works with Claude](https://img.shields.io/badge/works%20with-Claude-d97757?style=flat-square)
 ![Works with ChatGPT](https://img.shields.io/badge/works%20with-ChatGPT-10a37f?style=flat-square)
 ![Industries](https://img.shields.io/badge/industries-19-8250df?style=flat-square)
 ![You approve](https://img.shields.io/badge/nothing%20goes%20out-without%20your%20OK-2da44e?style=flat-square)
 
-**[⚡ Start in 5 minutes](#-start-in-5-minutes)** · **[🎁 What you get](#-what-you-get)** · **[📈 How the marketing engine works](#-how-the-organic-marketing-engine-works)** · **[🏭 Industries](#-built-for-your-industry)** · **[🔄 Updates](#-staying-up-to-date)**
+**[⚡ Start in 5 minutes](#-start-in-5-minutes)** · **[🎁 What you get](#-what-you-get)** · **[📈 How the marketing engine works](#-how-organic-marketing-works)** · **[🏭 Industries](#-built-for-your-industry)** · **[🔄 Updates](#-staying-up-to-date)**
 
 </div>
 
@@ -34,13 +34,13 @@
 | Just say | What your agent does for you |
 |---|---|
 | 🧭 **"Get started"** | Share your website, your company name or a document like a tax certificate. Your agent fills in your business profile, logo and social links, checks every channel (Instagram, WhatsApp, email, calendar, ads) and gives you a link to fix anything missing. |
-| 📱 **"Setup my organic marketing engine"** | 3 posts a day on Instagram: 2 carousels (with a PDF copy on LinkedIn) and 1 reel your AI avatar makes by itself (also posted to LinkedIn and YouTube Shorts). Every post offers a free gift. Anyone who comments the keyword gets a DM, follows you, then gets the gift and is saved as a lead. One tracker doc shows every post and its numbers, and every night it learns from them. |
+| 📱 **"Set up organic marketing"** | 3 posts a day on Instagram: 2 carousels (with a PDF copy on LinkedIn) and 1 reel your AI avatar makes by itself (HeyGen, with an optional ElevenLabs voice) (also posted to LinkedIn and YouTube Shorts). Every post offers a free gift. Anyone who comments the keyword gets a DM, follows you, then gets the gift and is saved as a lead. One tracker doc shows every post and its numbers, and every night it learns from them. |
 | 🎯 **"Launch lead form ads"** | Facebook and Instagram lead ads that drop leads straight into your CRM, with instant WhatsApp and email replies and a call reminder for your team. Built as drafts; nothing goes live without your "go ahead". |
 | 🧩 **"Add this to the Agentic Business Kit"** | When something works for your business, your agent turns it into a playbook. It becomes a shared rule only once real numbers prove it. |
 
 ---
 
-## 📈 How the organic marketing engine works
+## 📈 How Organic Marketing works
 
 ```mermaid
 flowchart LR
@@ -86,6 +86,15 @@ flowchart LR
 </table>
 
 **Why this pattern?** On the account it was built on, posts that asked for a comment keyword reached about **3.5× more people** than posts that didn't, and list posts were saved far more often than story posts.
+
+---
+
+## 🏢 For agencies: the same flow for every client
+
+1. Install this kit (and the **Agentic Agency Kit**) on the agency's Claude.
+2. For each client, connect **that client's own account**. Or the client installs this kit on their own Claude.
+3. Say **"Set up organic marketing"** inside the client's account. Your agent runs the same carousels, reels, guides, DM flows, tracker doc and nightly report for that client.
+4. Keep each client's settings (IDs, topics, approvals, avatar and voice) in that client's own private workspace, never in a shared kit. The Agency Kit's `onboard-a-client` shows the layout.
 
 ---
 

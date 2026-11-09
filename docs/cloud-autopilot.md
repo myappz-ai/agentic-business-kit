@@ -41,14 +41,14 @@ Topic order for every slot: today's news pick → viral-watch idea → the next 
 
 ## Reels: hands-free, or your own video
 
-- **Hands-free:** write the reel scripts in the tracker doc's Reels tab (`skills/organic-marketing-engine/references/tracker-doc.md`), then set a row to **Queued**. The 15:00 routine renders it with your approved avatar look and posts it (`reels-auto.md`). It needs avatar-tool API credit, so turn on auto-reload.
+- **Hands-free:** write the reel scripts in the tracker doc's Reels tab (`skills/organic-marketing/references/tracker-doc.md`), then set a row to **Queued**. The 15:00 routine renders it with your approved avatar look and posts it (`reels-auto.md`). It needs avatar-tool API credit, so turn on auto-reload.
 - **Your own video:** upload the .mp4 in **Settings → Vault** with "Keep original file", copy its public link, and post `🎬 Reel ready · <URL> · KEYWORD · <topic>` in your Slack self-DM. That line wins over the queue.
 
 ## Reports and alerts
 
 - Every slot report starts "✅ <slot> done" and lists what was completed and what was skipped. A failed step never stops the rest.
 - Platform errors go straight to your developer as a DM (tool, exact error, post link, workaround), at most once per error per day. Billing problems come to you.
-- Prompt templates for all 6 routines: `skills/organic-marketing-engine/references/cloud-routine-templates.md`. Keep a copy of each live prompt in your private repo.
+- Prompt templates for all 6 routines: `skills/organic-marketing/references/cloud-routine-templates.md`. Keep a copy of each live prompt in your private repo.
 
 ## Known limits
 
