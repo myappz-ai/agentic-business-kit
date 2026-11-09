@@ -79,13 +79,15 @@ Save everything to the project.
 
 This is the pattern the kit sets up. Follow it exactly; only the topics and the brand change. Details: `references/content-rules.md`, `references/linkedin-crosspost.md`, `references/scheduled-task-prompts.md`.
 
-**1. Three posts a day, two kinds of carousel.**
+**1. Three posts a day: two carousels and one reel.**
 
 | Slot (brand TZ) | Kind | Pillar | Built for |
 |---|---|---|---|
-| 08:00 | White post-card (v3) | The brand's core expertise (tips, tools, how-tos) | Saves and comments |
-| 13:00 | Cream big-type (v5) | Universal wisdom and life lessons, told for the audience | Shares and saves |
-| 20:00 | White post-card (v3) | Sales and growth for the audience | Comments |
+| 08:00 | Carousel, white post-card (v3) | The brand's core expertise (tips, tools, how-tos) | Saves and comments |
+| 15:00 | **Reel**: AI-avatar talking head (`references/reels-auto.md`), also posted to LinkedIn and YouTube Shorts (`references/reel-crosspost.md`). Fallback: cream big-type carousel (v5) | The tracker doc's next queued reel (a progressive series), or that day's topic | Reach and comments |
+| 20:00 | Carousel, white post-card (v3) | A real story or lesson, or sales and growth for the audience | Comments |
+
+A brand without a reel setup yet can run the 15:00 slot as a cream big-type carousel (v5: universal wisdom and life lessons, built for shares). Every post, of either kind, gets its row in the tracker doc (`references/tracker-doc.md`).
 
 **2. One carousel shape, 10 slides.**
 - Slide 1: a "7 …" hook that promises time, money or a clear result, plus the line **"🎁 Free gift on slide 4 →"**.

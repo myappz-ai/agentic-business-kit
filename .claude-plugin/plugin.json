@@ -1,7 +1,7 @@
 {
   "name": "agentic-business-kit",
-  "version": "0.5.0",
-  "description": "Proven AI marketing and sales playbooks an agent runs for a business: a hands-free Instagram organic marketing engine (3 posts a day, comment-to-DM guides, LinkedIn PDF copies) and Meta lead-form ads with a full CRM setup. Works with Claude, ChatGPT, Grok and other MCP agents.",
+  "version": "0.5.1",
+  "description": "Proven AI marketing and sales playbooks an agent runs for a business: Organic Marketing, a hands-free Instagram engine (2 carousels + 1 AI-avatar reel a day, comment-to-DM guides, LinkedIn and YouTube copies, a tracker doc) and Meta lead-form ads with a full CRM setup. Works with Claude, ChatGPT, Grok and other MCP agents.",
   "author": {
     "name": "Agentic Kits"
   },

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.5.1 – 9 Nov 2026
+- README "How Organic Marketing works" and SKILL.md §1 now show the real daily mix: 8 AM carousel, 3 PM AI-avatar reel (LinkedIn + YouTube Shorts), 8 PM carousel, plus the tracker doc. A v5 carousel remains the 15:00 fallback.
+- Plugin and marketplace descriptions updated to match.
+
 ## 0.5.0 – 9 Nov 2026
 - **The skill is now "Organic Marketing"** (`skills/organic-marketing`, was `organic-marketing-engine`). Old trigger phrases still work, and "Set up organic marketing" is the new one.
 - **ElevenLabs voice (optional, Starter)** in `reels-auto.md`: render the avatar reel with a cloned or branded voice through an audio URL.
