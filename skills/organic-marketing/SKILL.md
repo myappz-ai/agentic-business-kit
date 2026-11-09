@@ -1,9 +1,13 @@
 ---
-name: organic-marketing-engine
-description: Sets up a brand's hands-free Instagram organic marketing engine on its own platform account. It posts 3 carousels a day, and each post gets a comment keyword, its own free guide page, and its own Social Flow that DMs the guide and saves the commenter as a tagged CRM contact. The same carousel goes to LinkedIn as a PDF document post with comment replies. A nightly review rewrites the strategy from real numbers. Use when someone says "setup my organic marketing engine", "set up Instagram autopilot", "comment-to-DM guides", or "copy the 3-posts-a-day flow for my brand".
+name: organic-marketing
+description: "Organic Marketing: the full hands-free organic flow a brand can copy. Carousels (2 a day, comment-to-DM guides, LinkedIn PDF copies), a daily AI-avatar reel (HeyGen, optional ElevenLabs voice) cross-posted to LinkedIn and YouTube Shorts, a per-post follow-gated Social Flow, one tracker doc and a nightly report, all runnable as cloud routines. Use when someone says \"set up organic marketing\", \"setup my organic marketing engine\", \"set up Instagram autopilot\", \"comment-to-DM guides\", \"copy the 3-posts-a-day flow for my brand\" or \"replicate this for my client\"."
 ---
 
-# Organic Marketing Engine
+# Organic Marketing
+
+**The whole flow, one skill:** 2 carousels + 1 reel a day → a free guide per post → a follow-gated comment-to-DM flow → LinkedIn (and YouTube Shorts for reels) → one tracker doc → a nightly report that learns. The reel can be fully hands-free: script in the tracker doc → AI avatar (HeyGen), with an optional ElevenLabs voice (`references/reels-auto.md`).
+
+Works for one business, or for an agency running it per client: install this kit in each client's account, and keep each client's settings in their own private workspace.
 
 Run this in four phases, in order. Do not skip the audit. Do not schedule anything until the first post has passed a live end-to-end test.
 
