@@ -5,7 +5,7 @@
 ### Your AI agent runs your marketing and sales.
 **It brings in leads, saves them in your CRM and follows up for you, using playbooks proven on a real business.**
 
-![Version](https://img.shields.io/badge/version-0.5.0-1f6feb?style=flat-square)
+![Version](https://img.shields.io/badge/version-0.5.1-1f6feb?style=flat-square)
 ![Works with Claude](https://img.shields.io/badge/works%20with-Claude-d97757?style=flat-square)
 ![Works with ChatGPT](https://img.shields.io/badge/works%20with-ChatGPT-10a37f?style=flat-square)
 ![Industries](https://img.shields.io/badge/industries-19-8250df?style=flat-square)
@@ -44,42 +44,56 @@
 
 ```mermaid
 flowchart LR
-    A["📱 3 carousels a day<br/>Instagram + LinkedIn PDF"] --> B["🎁 Slide 4 previews<br/>a free gift"]
+    A["🗓️ 3 posts a day<br/>8 AM carousel · 3 PM reel · 8 PM carousel"] --> B["🎁 Each post offers<br/>a free gift"]
     B --> C["💬 People comment<br/>the keyword"]
     C --> D["📩 Auto-reply + DM<br/>follow, then the gift link"]
     D --> E["👤 Saved as a lead<br/>in your CRM"]
-    E --> F["🌙 Nightly review<br/>doubles down on winners"]
+    A --> X["🔁 Same post on LinkedIn<br/>reels also on YouTube Shorts"]
+    E --> T["📊 Tracker doc<br/>every post + its numbers"]
+    X --> T
+    T --> F["🌙 Nightly report<br/>doubles down on winners"]
     F --> A
 ```
 
 <table>
 <tr>
-<td width="33%" valign="top">
+<td width="25%" valign="top">
 
-**🗓️ 3 posts, 2 styles**
+**🗓️ 3 posts a day**
 
-- **Morning:** your expertise, as clean tips
-- **Afternoon:** life lessons in big type, made to be shared
-- **Evening:** sales and growth for your customers
+- **8 AM carousel:** your expertise as clean tips, built for saves
+- **3 PM reel:** your AI avatar on camera, made by itself
+- **8 PM carousel:** a real story or lesson, built for comments
 
 </td>
-<td width="33%" valign="top">
+<td width="25%" valign="top">
 
-**🧱 The 10-slide shape**
+**🎬 The daily reel**
+
+- The script comes from your tracker doc, or gets written for you
+- HeyGen avatar with captions; optional ElevenLabs voice
+- Also posted to LinkedIn and YouTube Shorts
+- If the video fails, a carousel posts instead
+
+</td>
+<td width="25%" valign="top">
+
+**🧱 The 10-slide carousel**
 
 - **Slide 1:** the hook + "🎁 Free gift on slide 4"
 - **Slide 4:** a preview of the free gift
 - **Slide 9:** a recap to screenshot
 - **Slide 10:** comment, save and share
+- PDF copy on LinkedIn
 
 </td>
-<td width="33%" valign="top">
+<td width="25%" valign="top">
 
-**🔑 Keywords anyone can type**
+**🔑 Keywords + tracking**
 
-- One short, everyday word
-- Each post sends its own gift, even when a word is reused
-- One reply per person, never spam
+- One short word that names the gift
+- Each post gets its own gift and its own DM flow
+- One tracker doc (Overview · Reels · Carousels) fills itself in every night
 
 </td>
 </tr>
