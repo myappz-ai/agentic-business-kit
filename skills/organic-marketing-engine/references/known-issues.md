@@ -14,3 +14,5 @@
 | Flows don't replay comments made before the flow existed. | Early commenters are missed. | Create the flow immediately after publishing. Ask early commenters to DM the keyword. | Backfill option. |
 | Composio's sandbox can reset. | Renderer and font go missing. | The run recreates them from `references/`. | — |
 | The platform's `create_form` adds no submit button (affects landing-page forms, not flows). | The hosted form has no Submit button. | Add it by hand in the Form builder, or use a native embed. | Always append a submit element. |
+| The avatar video tool's API wallet is separate from its app plan and can hit $0. | The reel render fails with `insufficient_credit`. | Turn on auto-reload. The nightly report warns under $3, and the slot falls back to a carousel. | — |
+| YouTube "Video Uploads per day" (429) on Composio's shared Google project. | The Short isn't posted. | Report "pending". The nightly report retries after the quota resets (midnight Pacific), after a duplicate check. | Bring your own Google project to Composio. |
